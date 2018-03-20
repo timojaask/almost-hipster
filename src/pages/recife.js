@@ -42,7 +42,7 @@ export default ({ data }) => (
     </p>
     <h4>Castigliani</h4>
     <p>
-      Castigliani Cafés Especiais is another great coffee shop, located near Casa Forte on North West of Recife. Unfortunately, I've only gone there once, and they had great coffee, and as far as I remember some vegan snacks and raw cake options.
+      Castigliani Cafés Especiais is another great coffee shop, located near Casa Forte in the North West part of town. Unfortunately, I've only gone there once, but they had great coffee, and as far as I remember some vegan snacks and raw cake options.
     </p>
     <h2>Bars</h2>
     <h4>Pina Cocktails & Co</h4>
