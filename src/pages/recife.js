@@ -1,27 +1,13 @@
 import React from "react";
 import Img from "gatsby-image";
 import PostHeader from "../components/PostHeader";
+import { FootnoteLink, FootnoteList } from "../components/Footnotes"
 import styles from "./recife.module.css";
 
-const footnoteId = index => `footnote-${index}`
-
-const Footnote = ({ index, title, url }) =>
-  <li id={footnoteId(index)}>
-    {index}. <a href={url} target="_blank">{title}</a>
-  </li>
-
-const FootnoteList = () =>
-  <div>
-    <hr />
-    <h3>References</h3>
-    <ul>
-      <Footnote index="1" title="Coffee — Wikipedia" url="https://en.wikipedia.org/wiki/Coffee" />
-      <Footnote index="2" title="Café expresso — Wikipedia" url="https://pt.wikipedia.org/wiki/Café_expresso" />
-    </ul>
-  </div>
-
-const FootnoteLink = ({ index }) =>
-  <sup><a href={`#${footnoteId(index)}`}>[{index}]</a></sup>
+const footnotes = [
+  { index: "1", title: "Coffee — Wikipedia", url: "https://en.wikipedia.org/wiki/Coffee" },
+  { index: "2", title: "Café expresso — Wikipedia", url: "https://pt.wikipedia.org/wiki/Café_expresso" },
+]
 
 export default ({ data }) => (
   <div>
@@ -80,7 +66,7 @@ export default ({ data }) => (
     <p>
       Be ready to present your ID at the entrance.
     </p>
-    <FootnoteList />
+    <FootnoteList footnotes={footnotes} />
   </div>
 );
 
