@@ -47,18 +47,18 @@ export default ({ data }) => (
     <h2>Bars</h2>
     <h4>Pina Cocktails & Co</h4>
     <p>
-      The only truly great cocktail bar I know of in Recife. Located on a shady street with nothing else interesting around, with no signs outside, in real speakeasy style. Fantastic atmosphere with dimmed lights and cozy interior. The bartender, Luciano, is creative and always takes his time to listen to your preferences, to craft an off-the-menu drink just for your taste.
+      It's the only truly great cocktail bar that I know of in Recife. Located on a shady street with nothing else interesting around, and with no signs outside — a real speakeasy style. Inside you'll find a fantastic atmosphere with dimmed lights and cozy interior. The bartender, Luciano, is creative and always takes his time to listen to your preferences, and craft an off-the-menu drink just for your taste.
     </p>
     <p>
-      They only take in 20 people per night, and you can only enter with a reservation. Reservations are made via WhatsApp. Roughly 30 minutes before the opening time you will receive a message with a password that you must tell to the bouncer upon arrival.
+      They only take in 20 people per night, and you cannot come without a reservation. Reservations are made via WhatsApp. Roughly 30 minutes before the opening time you will receive a message with a password that you must tell to the bouncer upon arrival.
     </p>
     <h4>Mr. Hoppy</h4>
     <p>
-      A lively outdoor bar, serving only a small selection of on-tap craft beers (with around ten taps open on a typical night) and burgers. It gets very crowded during weekends.
+      A lively outdoor bar, serving only a small selection of on-tap craft beers (with around ten taps open on a typical night) and burgers. Great atmosphere and great beers. Sometimes they even have live music, but then it gets pretty crowded.
     </p>
     <h4>Be Hookah</h4>
     <p>
-      A somewhat hidden outdoor hookah bar, with a decent selection of tobacco flavors. They serve typical alcoholic drinks and a couple of special house drinks.
+      A somewhat hidden outdoor hookah bar, with a decent selection of tobacco flavors. They serve all the typical alcoholic drinks, plus a few house specials.
     </p>
     <p>
       The most surprising part about this place is the fantastic burgers that you just have to try. The staff who's taking food orders can be pretty cranky and rude at times, which is very un-Brazilian, but it will be worth it.
