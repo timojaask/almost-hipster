@@ -14,7 +14,7 @@ export const FootnoteList = ({ footnotes }) =>
     <ul>
       {
         footnotes.map(({ index, title, url }) =>
-          <Footnote index={index} title={title} url={url} />)
+          <Footnote key={index} index={index} title={title} url={url} />)
       }
     </ul>
   </div>
