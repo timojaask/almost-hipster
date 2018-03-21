@@ -2,11 +2,20 @@ import React from "react";
 import Img from "gatsby-image";
 import PostHeader from "../components/PostHeader";
 import { FootnoteLink, FootnoteList } from "../components/Footnotes"
+import { ImageGrid } from "../components/ImageGrid"
 import styles from "./recife.module.css";
 
 const footnotes = [
   { index: "1", title: "Coffee — Wikipedia", url: "https://en.wikipedia.org/wiki/Coffee" },
   { index: "2", title: "Café expresso — Wikipedia", url: "https://pt.wikipedia.org/wiki/Café_expresso" },
+]
+
+const borsoiPhotos = data => [
+  data.borsoi1,
+  data.borsoi2,
+  data.borsoi3,
+  data.borsoi4,
+  data.borsoi5,
 ]
 
 export default ({ data }) => (
@@ -36,6 +45,8 @@ export default ({ data }) => (
     <p>
       Both locations have excellent options for killing small hunger, such as sandwiches and local specialties. On weekdays in Pina location, they serve lunch of the day for R$25, which I've had a couple of times and it was delightful.
     </p>
+    {console.log(`data: ${JSON.stringify(data, null, 2)}`)}
+    <ImageGrid photos={borsoiPhotos(data)} />
     <h4>Kaffe</h4>
     <p>
       Kaffe Torrefação e Treinamento is a coffee roasting and barista training shop, but they also serve coffee. What I like about this place is that you often can choose one of the two available bean varieties for your drink. Just like Borsoi, this is a very cozy place with friendly and skilled staff.
@@ -72,10 +83,35 @@ export default ({ data }) => (
 
 export const query = graphql`
   query RecifePostImages {
-      cover: imageSharp(id: {regex: "/recife-cover.jpg/" }) {
+    cover: imageSharp(id: {regex: "/recife-cover/" }) {
       sizes(maxWidth: 700, maxHeight: 300) {
-      ...GatsbyImageSharpSizes
-    }
+        ...GatsbyImageSharpSizes
+      }
+    },
+    borsoi1: imageSharp(id: {regex: "/borsoi1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    borsoi2: imageSharp(id: {regex: "/borsoi2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    borsoi3: imageSharp(id: {regex: "/borsoi3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    borsoi4: imageSharp(id: {regex: "/borsoi4/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    borsoi5: imageSharp(id: {regex: "/borsoi5/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
     }
   }
 `;
