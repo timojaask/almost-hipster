@@ -17,7 +17,7 @@ export default ({ data }) => (
       Brazil is by far the largest producer of coffee in the world — producing one-third of all the coffee,<FootnoteLink index="1" /> so before coming here, I was pretty excited to see what kind of coffee culture the country has.
     </p>
     <p>
-      To my surprise, the locals don't seem to appreciate the taste of coffee without adding a whole lot of sugar to it. If you order a “cappuccino” at a regular coffee shop in Recife, you will most commonly get served a coffee drink made with espresso, steamed milk, <strong>sugar</strong> and, <strong>cinnamon</strong>. You've been warned!
+      To my surprise, the locals don't seem to appreciate the taste of coffee without adding a whole lot of sugar to it. If you order a “cappuccino” at a regular coffee shop in Recife, you will most commonly get served a coffee drink made of espresso, steamed milk, <strong>sugar</strong> and, <strong>cinnamon</strong>. You've been warned!
     </p>
     <p>
       Most common coffee shops São Braz and Delta Expresso [traditional Portuguese spelling of “espresso”<FootnoteLink index="2" />] are the local equivalents of Starbucks. However, there are a few third-wave coffee shops that prepare some excellent coffee drinks.
