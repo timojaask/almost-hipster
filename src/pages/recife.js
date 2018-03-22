@@ -45,7 +45,6 @@ export default ({ data }) => (
     <p>
       Both locations have excellent options for killing small hunger, such as sandwiches and local specialties. On weekdays in Pina location, they serve lunch of the day for R$25, which I've had a couple of times and it was delightful.
     </p>
-    {console.log(`data: ${JSON.stringify(data, null, 2)}`)}
     <ImageGrid photos={borsoiPhotos(data)} />
     <h4>Kaffe</h4>
     <p>
