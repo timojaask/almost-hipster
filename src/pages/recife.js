@@ -26,6 +26,9 @@ export default ({ data }) => (
     <p>
       My favorite drink — flat white — is not known here, but asking for a cappuccino with more coffee and less milk, “cappuccino com mais cafe e menos leite,” works pretty well in the specialty coffee places.
     </p>
+    {
+      /* The problem with this PointOfInterest component is that it doesn't support text formatting. What if I wanted some words to be bold or italic? There's currently no way, so it would have to support Markdown to actually be useful. */
+    }
     <PointOfInterest name="Borsoi" paragraphs={[
       "Borsoi turned out to be my go-to place for a daily dose of coffee. They have two locations: one in Boa Viagem and one in Pina. Both are equally cozy, and the staff is always happy and seem to enjoy their job. Baristas are devoted to the art of making coffee, participate in competitions, and they can spend hours talking about it. Makes me wish I spoke better Portuguese!",
       "Both locations have excellent options for killing small hunger, such as sandwiches and local specialties. On weekdays in Pina location, they serve lunch of the day for R$25, which I've had a couple of times and it was delightful.",
