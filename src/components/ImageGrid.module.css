@@ -1,12 +1,25 @@
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/*
+Full size:
+700, 525
+Thumbnails:
+x = 700/4 = 175
+y = 525/4 = 131,25
+175, 131
+*/
 .container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: 131px;
 }
 
 @media only screen and (max-width: 700px) {
   .container {
-    grid-auto-rows: minmax(15vw, auto);
+    grid-auto-rows: 18.72vw;
   }
 }
 
@@ -19,23 +32,23 @@
 .thumbnail1 {
   background-color: green;
   grid-column: 1 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 5 / span 1;
 }
 
 .thumbnail2 {
   background-color: red;
   grid-column: 2 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 5 / span 1;
 }
 
 .thumbnail3 {
   background-color: yellow;
   grid-column: 3 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 5 / span 1;
 }
 
 .thumbnail4 {
   background-color: gray;
   grid-column: 4 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 5 / span 1;
 }
