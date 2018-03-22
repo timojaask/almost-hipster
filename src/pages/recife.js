@@ -88,10 +88,10 @@ export default ({ data }) => (
     <h2>Other</h2>
     <h4>Açaí Empório Boa Viagem</h4>
     <p>
-      Açaí is a big thing in Recife, but I've never been a huge fan of it, until our friends introduced me to Açaí Empório — açaí self-service shop. They have lots of different flavors of açaí and things that go well with açaí! And it's absolutely delicios.
+      Açaí is a big thing in Recife, but I've never been a huge fan of it until our friends introduced me to Açaí Empório — açaí self-service shop. They have lots of different flavors of açaí and things that go well with açaí! And it's delicious.
     </p>
     <p>
-      The place itself is very nice — clean and cozy, the staff is super friendly, and they they have a foosball table! What else would one want?
+      The place itself is very nice — clean and cozy, the staff is super friendly, and they have a foosball table! What else would one want?
     </p>
     <ImageGrid photos={[
       data.acaiemporio1,
