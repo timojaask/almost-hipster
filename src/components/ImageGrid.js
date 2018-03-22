@@ -48,7 +48,7 @@ const MultipleImages = ({ largePhoto, thumbnails, onPhotoSelected }) =>
     </div>
     {thumbnails.map((photo, idx) =>
       <button onClick={() => { onPhotoSelected(idx + 1) }} key={idx} className={styleForIndex(idx + 1)}>
-        <Img sizes={photo.sizes} />
+        <Img className={styles.thumbnailImage} sizes={photo.sizes} />
       </button>
     )}
   </div>

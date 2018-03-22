@@ -2,24 +2,25 @@ button {
   margin: 0;
   padding: 0;
   border: none;
+  background-color: white;
 }
 
-/*
-Full size:
-700, 525
-Thumbnails:
-x = 700/4 = 175
-y = 525/4 = 131,25
-175, 131
-*/
+.thumbnailImage:hover {
+  opacity: 0.7;
+}
+
+
 .container {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  /* Full size: 700, 525
+  Thumbnail height: 525/4 = 131,25 */
   grid-auto-rows: 131px;
 }
 
 @media only screen and (max-width: 700px) {
   .container {
+    /* 18.72vw is a trial&error value that fits */
     grid-auto-rows: 18.72vw;
   }
 }
