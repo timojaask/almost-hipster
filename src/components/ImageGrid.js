@@ -10,7 +10,6 @@ export class ImageGrid extends Component {
 
   onPhotoSelected(photoIndex) {
     // Take photo at index and swap it with photo at index 0
-    console.log('swapping photos: 0 and ' + photoIndex);
     let photos = this.state.photos;
     const firstPhoto = photos[0];
     photos[0] = photos[photoIndex];
