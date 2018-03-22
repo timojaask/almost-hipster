@@ -5,19 +5,6 @@ import { FootnoteLink, FootnoteList } from "../components/Footnotes"
 import { ImageGrid } from "../components/ImageGrid"
 import styles from "./recife.module.css";
 
-const footnotes = [
-  { index: "1", title: "Coffee — Wikipedia", url: "https://en.wikipedia.org/wiki/Coffee" },
-  { index: "2", title: "Café expresso — Wikipedia", url: "https://pt.wikipedia.org/wiki/Café_expresso" },
-]
-
-const borsoiPhotos = data => [
-  data.borsoi1,
-  data.borsoi2,
-  data.borsoi3,
-  data.borsoi4,
-  data.borsoi5,
-]
-
 export default ({ data }) => (
   <div>
     <PostHeader coverImage={data.cover} name="Recife" />
@@ -45,7 +32,13 @@ export default ({ data }) => (
     <p>
       Both locations have excellent options for killing small hunger, such as sandwiches and local specialties. On weekdays in Pina location, they serve lunch of the day for R$25, which I've had a couple of times and it was delightful.
     </p>
-    <ImageGrid photos={borsoiPhotos(data)} />
+    <ImageGrid photos={[
+      data.borsoi1,
+      data.borsoi2,
+      data.borsoi3,
+      data.borsoi4,
+      data.borsoi5,
+    ]} />
     <h4>Kaffe</h4>
     <p>
       Kaffe Torrefação e Treinamento is a coffee roasting and barista training shop, but they also serve coffee. What I like about this place is that you often can choose one of the two available bean varieties for your drink. Just like Borsoi, this is a very cozy place with friendly and skilled staff.
@@ -76,7 +69,10 @@ export default ({ data }) => (
     <p>
       Be ready to present your ID at the entrance.
     </p>
-    <FootnoteList footnotes={footnotes} />
+    <FootnoteList footnotes={[
+      { index: "1", title: "Coffee — Wikipedia", url: "https://en.wikipedia.org/wiki/Coffee" },
+      { index: "2", title: "Café expresso — Wikipedia", url: "https://pt.wikipedia.org/wiki/Café_expresso" },
+    ]} />
   </div>
 );
 
