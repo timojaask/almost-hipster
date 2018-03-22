@@ -15,7 +15,6 @@ const ListItem = ({ name, coverImage, path }) =>
 export default ({ data }) =>
   <div className={styles.container}>
     <ListItem name="Recife" coverImage={data.recifeCover} path="/recife" />
-    <ListItem name="New York" coverImage={data.newYorkCover} path="/new-york" />
   </div>
 
 export const query = graphql`
