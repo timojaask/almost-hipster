@@ -9,7 +9,6 @@ const Footnote = ({ index, title, url }) =>
 
 export const FootnoteList = ({ footnotes }) =>
   <div>
-    <hr />
     <h3>References</h3>
     <ul>
       {
