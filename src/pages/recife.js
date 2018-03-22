@@ -3,6 +3,7 @@ import Img from "gatsby-image";
 import PostHeader from "../components/PostHeader";
 import { FootnoteLink, FootnoteList } from "../components/Footnotes"
 import { ImageGrid } from "../components/ImageGrid"
+import { PointOfInterest } from "../components/PointOfInterest"
 import styles from "./recife.module.css";
 
 export default ({ data }) => (
@@ -25,66 +26,46 @@ export default ({ data }) => (
     <p>
       My favorite drink — flat white — is not known here, but asking for a cappuccino with more coffee and less milk, “cappuccino com mais cafe e menos leite,” works pretty well in the specialty coffee places.
     </p>
-    <h4>Borsoi</h4>
-    <p>
-      Borsoi turned out to be my go-to place for a daily dose of coffee. They have two locations: one in Boa Viagem and one in Pina. Both are equally cozy, and the staff is always happy and seem to enjoy their job. Baristas are devoted to the art of making coffee, participate in competitions, and they can spend hours talking about it. Makes me wish I spoke better Portuguese!
-    </p>
-    <p>
-      Both locations have excellent options for killing small hunger, such as sandwiches and local specialties. On weekdays in Pina location, they serve lunch of the day for R$25, which I've had a couple of times and it was delightful.
-    </p>
-    <p>
-      One day we wanted to go for a coffee, and suddenly the power went off. Apparently, there was no electricity in 13 states of Brazil. We still decided to take a walk by the beach, because there was nothing to do at home anyway. We arrived at Borsoi and barista tells us that the espresso machine doesn't work, but he can make us some coffee. We asked if he can do it with milk, to which he said no, but he then changed his mind. He warmed up some milk on a gas stove, added some hot water, and stretched it by hand using a small French press. He then mixed it with some hand-ground, pour over coffee, and the result was so good it blew my mind. They also insisted that we don't pay for it (although, I just couldn't not tip).
-    </p>
-    <ImageGrid photos={[
+    <PointOfInterest name="Borsoi" paragraphs={[
+      "Borsoi turned out to be my go-to place for a daily dose of coffee. They have two locations: one in Boa Viagem and one in Pina. Both are equally cozy, and the staff is always happy and seem to enjoy their job. Baristas are devoted to the art of making coffee, participate in competitions, and they can spend hours talking about it. Makes me wish I spoke better Portuguese!",
+      "Both locations have excellent options for killing small hunger, such as sandwiches and local specialties. On weekdays in Pina location, they serve lunch of the day for R$25, which I've had a couple of times and it was delightful.",
+      "One day we wanted to go for a coffee, and suddenly the power went off. Apparently, there was no electricity in 13 states of Brazil. We still decided to take a walk by the beach, because there was nothing to do at home anyway. We arrived at Borsoi and barista tells us that the espresso machine doesn't work, but he can make us some coffee. We asked if he can do it with milk, to which he said no, but he then changed his mind. He warmed up some milk on a gas stove, added some hot water, and stretched it by hand using a small French press. He then mixed it with some hand-ground, pour over coffee, and the result was so good it blew my mind. They also insisted that we don't pay for it (although, I just couldn't not tip)."
+    ]} photos={[
       data.borsoi1,
       data.borsoi2,
       data.borsoi3,
       data.borsoi4,
       data.borsoi5,
     ]} />
-    <h4>Kaffe</h4>
-    <p>
-      Kaffe Torrefação e Treinamento is a coffee roasting and barista training shop, but they also serve coffee. What I like about this place is that you often can choose one of the two available bean varieties for your drink. Just like Borsoi, this is a very cozy place with friendly and skilled staff.
-    </p>
-    <ImageGrid photos={[
+    <PointOfInterest name="Kaffe" paragraphs={[
+      "Kaffe Torrefação e Treinamento is a coffee roasting and barista training shop, but they also serve coffee. What I like about this place is that you often can choose one of the two available bean varieties for your drink. Just like Borsoi, this is a very cozy place with friendly and skilled staff."
+    ]} photos={[
       data.kaffe1,
     ]} />
-    <h4>Castigliani</h4>
-    <p>
-      Castigliani Cafés Especiais is another great coffee shop, located near Casa Forte in the North West part of town. Unfortunately, I've only gone there once, but they had great coffee, and as far as I remember some vegan snacks and raw cake options.
-    </p>
+    <PointOfInterest name="Castigliani" paragraphs={[
+      "Castigliani Cafés Especiais is another great coffee shop, located near Casa Forte in the North West part of town. Unfortunately, I've only gone there once, but they had great coffee, and as far as I remember some vegan snacks and raw cake options."
+    ]} />
     <h2>Bars</h2>
-    <h4>Pina Cocktails & Co</h4>
-    <p>
-      It's the only truly great cocktail bar that I know of in Recife. Located on a shady street with nothing else interesting around, and with no signs outside — a real speakeasy style. Inside you'll find a fantastic atmosphere with dimmed lights and cozy interior. The bartender, Luciano, is creative and always takes his time to listen to your preferences, and craft an off-the-menu drink just for your taste.
-    </p>
-    <p>
-      They only take in 20 people per night, and you cannot come without a reservation. Reservations are made via WhatsApp. Roughly 30 minutes before the opening time you will receive a message with a password that you must tell to the bouncer upon arrival.
-    </p>
-    <ImageGrid photos={[
+    <PointOfInterest name="Pina Cocktails & Co" paragraphs={[
+      "It's the only truly great cocktail bar that I know of in Recife. Located on a shady street with nothing else interesting around, and with no signs outside — a real speakeasy style. Inside you'll find a fantastic atmosphere with dimmed lights and cozy interior. The bartender, Luciano, is creative and always takes his time to listen to your preferences, and craft an off-the-menu drink just for your taste.",
+      "They only take in 20 people per night, and you cannot come without a reservation. Reservations are made via WhatsApp. Roughly 30 minutes before the opening time you will receive a message with a password that you must tell to the bouncer upon arrival."
+    ]} photos={[
       data.pinaco1,
       data.pinaco2,
       data.pinaco3,
       data.pinaco4,
       data.pinaco5,
     ]} />
-    <h4>Mr. Hoppy</h4>
-    <p>
-      A lively outdoor bar, serving only a small selection of on-tap craft beers (with around ten taps open on a typical night) and burgers. Great atmosphere and great beers. Sometimes they even have live music, but then it gets pretty crowded.
-    </p>
-    <ImageGrid photos={[
+    <PointOfInterest name="Mr. Hoppy" paragraphs={[
+      "A lively outdoor bar, serving only a small selection of on-tap craft beers (with around ten taps open on a typical night) and burgers. Great atmosphere and great beers. Sometimes they even have live music, but then it gets pretty crowded."
+    ]} photos={[
       data.mrhoppy1,
     ]} />
-    <h4>Be Hookah</h4>
-    <p>
-      A somewhat hidden outdoor hookah bar, with a decent selection of tobacco flavors. They serve all the typical alcoholic drinks, plus a few house specials.
-    </p>
-    <p>
-      The most surprising part about this place is the fantastic burgers that you just have to try. The staff who's taking food orders can be pretty cranky and rude at times, which is very un-Brazilian, but it will be worth it.
-    </p>
-    <p>
-      Be ready to present your ID at the entrance.
-    </p>
+    <PointOfInterest name="Be Hookah" paragraphs={[
+      "A somewhat hidden outdoor hookah bar, with a decent selection of tobacco flavors. They serve all the typical alcoholic drinks, plus a few house specials.",
+      "The most surprising part about this place is the fantastic burgers that you just have to try. The staff who's taking food orders can be pretty cranky and rude at times, which is very un-Brazilian, but it will be worth it.",
+      "Be ready to present your ID at the entrance."
+    ]} />
     <ImageGrid photos={[
       data.recife1,
     ]} />
