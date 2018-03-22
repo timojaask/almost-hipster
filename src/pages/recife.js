@@ -32,6 +32,9 @@ export default ({ data }) => (
     <p>
       Both locations have excellent options for killing small hunger, such as sandwiches and local specialties. On weekdays in Pina location, they serve lunch of the day for R$25, which I've had a couple of times and it was delightful.
     </p>
+    <p>
+      One day we wanted to go for a coffee, and suddenly the power went off. Apparently, there was no electricity in 13 states of Brazil. We still decided to take a walk by the beach, because there was nothing to do at home anyway. We arrived at Borsoi and barista tells us that the espresso machine doesn't work, but he can make us some coffee. We asked if he can do it with milk, to which he said no, but he then changed his mind. He warmed up some milk on a gas stove, added some hot water, and stretched it by hand using a small French press. He then mixed it with some hand-ground, pour over coffee, and the result was so good it blew my mind. They also insisted that we don't pay for it (although, I just couldn't not tip).
+    </p>
     <ImageGrid photos={[
       data.borsoi1,
       data.borsoi2,
