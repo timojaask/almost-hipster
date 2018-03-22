@@ -1,0 +1,51 @@
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: white;
+}
+
+.thumbnailImage:hover {
+  opacity: 0.7;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* Full size: 700, 525
+  Thumbnail height: 525/4 = 131,25 */
+  grid-auto-rows: 131px;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    /* 18.71vw is a trial&error value that fits */
+    grid-auto-rows: 18.71vw;
+  }
+}
+
+.largeImage {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 3;
+}
+
+.thumbnail1 {
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 1;
+}
+
+.thumbnail2 {
+  grid-column: 2 / span 1;
+  grid-row: 5 / span 1;
+}
+
+.thumbnail3 {
+  grid-column: 3 / span 1;
+  grid-row: 5 / span 1;
+}
+
+.thumbnail4 {
+  grid-column: 4 / span 1;
+  grid-row: 5 / span 1;
+}

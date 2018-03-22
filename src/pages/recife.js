@@ -2,12 +2,8 @@ import React from "react";
 import Img from "gatsby-image";
 import PostHeader from "../components/PostHeader";
 import { FootnoteLink, FootnoteList } from "../components/Footnotes"
+import { ImageGrid } from "../components/ImageGrid"
 import styles from "./recife.module.css";
-
-const footnotes = [
-  { index: "1", title: "Coffee — Wikipedia", url: "https://en.wikipedia.org/wiki/Coffee" },
-  { index: "2", title: "Café expresso — Wikipedia", url: "https://pt.wikipedia.org/wiki/Café_expresso" },
-]
 
 export default ({ data }) => (
   <div>
@@ -39,10 +35,20 @@ export default ({ data }) => (
     <p>
       One day we wanted to go for a coffee, and suddenly the power went off. Apparently, there was no electricity in 13 states of Brazil. We still decided to take a walk by the beach, because there was nothing to do at home anyway. We arrived at Borsoi and barista tells us that the espresso machine doesn't work, but he can make us some coffee. We asked if he can do it with milk, to which he said no, but he then changed his mind. He warmed up some milk on a gas stove, added some hot water, and stretched it by hand using a small French press. He then mixed it with some hand-ground, pour over coffee, and the result was so good it blew my mind. They also insisted that we don't pay for it (although, I just couldn't not tip).
     </p>
+    <ImageGrid photos={[
+      data.borsoi1,
+      data.borsoi2,
+      data.borsoi3,
+      data.borsoi4,
+      data.borsoi5,
+    ]} />
     <h4>Kaffe</h4>
     <p>
       Kaffe Torrefação e Treinamento is a coffee roasting and barista training shop, but they also serve coffee. What I like about this place is that you often can choose one of the two available bean varieties for your drink. Just like Borsoi, this is a very cozy place with friendly and skilled staff.
     </p>
+    <ImageGrid photos={[
+      data.kaffe1,
+    ]} />
     <h4>Castigliani</h4>
     <p>
       Castigliani Cafés Especiais is another great coffee shop, located near Casa Forte in the North West part of town. Unfortunately, I've only gone there once, but they had great coffee, and as far as I remember some vegan snacks and raw cake options.
@@ -55,10 +61,20 @@ export default ({ data }) => (
     <p>
       They only take in 20 people per night, and you cannot come without a reservation. Reservations are made via WhatsApp. Roughly 30 minutes before the opening time you will receive a message with a password that you must tell to the bouncer upon arrival.
     </p>
+    <ImageGrid photos={[
+      data.pinaco1,
+      data.pinaco2,
+      data.pinaco3,
+      data.pinaco4,
+      data.pinaco5,
+    ]} />
     <h4>Mr. Hoppy</h4>
     <p>
       A lively outdoor bar, serving only a small selection of on-tap craft beers (with around ten taps open on a typical night) and burgers. Great atmosphere and great beers. Sometimes they even have live music, but then it gets pretty crowded.
     </p>
+    <ImageGrid photos={[
+      data.mrhoppy1,
+    ]} />
     <h4>Be Hookah</h4>
     <p>
       A somewhat hidden outdoor hookah bar, with a decent selection of tobacco flavors. They serve all the typical alcoholic drinks, plus a few house specials.
@@ -69,16 +85,87 @@ export default ({ data }) => (
     <p>
       Be ready to present your ID at the entrance.
     </p>
-    <FootnoteList footnotes={footnotes} />
+    <ImageGrid photos={[
+      data.recife1,
+    ]} />
+    <FootnoteList footnotes={[
+      { index: "1", title: "Coffee — Wikipedia", url: "https://en.wikipedia.org/wiki/Coffee" },
+      { index: "2", title: "Café expresso — Wikipedia", url: "https://pt.wikipedia.org/wiki/Café_expresso" },
+    ]} />
   </div>
 );
 
 export const query = graphql`
   query RecifePostImages {
-      cover: imageSharp(id: {regex: "/recife-cover.jpg/" }) {
-      sizes(maxWidth: 700, maxHeight: 300) {
-      ...GatsbyImageSharpSizes
-    }
+    cover: imageSharp(id: {regex: "/recife-cover/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    recife1: imageSharp(id: {regex: "/recife1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    borsoi1: imageSharp(id: {regex: "/borsoi1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    borsoi2: imageSharp(id: {regex: "/borsoi2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    borsoi3: imageSharp(id: {regex: "/borsoi3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    borsoi4: imageSharp(id: {regex: "/borsoi4/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    borsoi5: imageSharp(id: {regex: "/borsoi5/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    kaffe1: imageSharp(id: {regex: "/kaffe1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pinaco1: imageSharp(id: {regex: "/pinaco1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pinaco2: imageSharp(id: {regex: "/pinaco2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pinaco3: imageSharp(id: {regex: "/pinaco3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pinaco4: imageSharp(id: {regex: "/pinaco4/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pinaco5: imageSharp(id: {regex: "/pinaco5/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    mrhoppy1: imageSharp(id: {regex: "/mrhoppy1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
     }
   }
 `;
