@@ -1,14 +1,11 @@
 import React, { Component } from "react";
 import Img from "gatsby-image";
+import concat from "lodash/concat";
+import drop from "lodash/drop";
+import take from "lodash/take";
 import styles from "./ImageGrid.module.css";
 
-const swapItems = (array, idxA, idxB) => {
-  let newArray = array;
-  const itemAtIdxA = newArray[idxA];
-  newArray[idxA] = newArray[idxB];
-  newArray[idxB] = itemAtIdxA;
-  return newArray;
-}
+const rotate = (array, n) => concat(drop(array, n), take(array, n));
 
 export class ImageGrid extends Component {
   constructor(props) {
@@ -17,7 +14,7 @@ export class ImageGrid extends Component {
   }
 
   onPhotoSelected(photoIndex) {
-    this.setState({ photos: swapItems(this.state.photos, 0, photoIndex) })
+    this.setState({ photos: rotate(this.state.photos, photoIndex) })
   }
 
   render() {
