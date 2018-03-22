@@ -2,6 +2,14 @@ import React, { Component } from "react";
 import Img from "gatsby-image";
 import styles from "./ImageGrid.module.css";
 
+const swapItems = (array, idxA, idxB) => {
+  let newArray = array;
+  const itemAtIdxA = newArray[idxA];
+  newArray[idxA] = newArray[idxB];
+  newArray[idxB] = itemAtIdxA;
+  return newArray;
+}
+
 export class ImageGrid extends Component {
   constructor(props) {
     super();
@@ -9,12 +17,7 @@ export class ImageGrid extends Component {
   }
 
   onPhotoSelected(photoIndex) {
-    // Take photo at index and swap it with photo at index 0
-    let photos = this.state.photos;
-    const firstPhoto = photos[0];
-    photos[0] = photos[photoIndex];
-    photos[photoIndex] = firstPhoto;
-    this.setState({ photos })
+    this.setState({ photos: swapItems(this.state.photos, 0, photoIndex) })
   }
 
   render() {
