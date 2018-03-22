@@ -72,6 +72,9 @@ export default ({ data }) => (
     <p>
       A lively outdoor bar, serving only a small selection of on-tap craft beers (with around ten taps open on a typical night) and burgers. Great atmosphere and great beers. Sometimes they even have live music, but then it gets pretty crowded.
     </p>
+    <ImageGrid photos={[
+      data.mrhoppy1,
+    ]} />
     <h4>Be Hookah</h4>
     <p>
       A somewhat hidden outdoor hookah bar, with a decent selection of tobacco flavors. They serve all the typical alcoholic drinks, plus a few house specials.
@@ -155,6 +158,11 @@ export const query = graphql`
       }
     },
     pinaco5: imageSharp(id: {regex: "/pinaco5/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    mrhoppy1: imageSharp(id: {regex: "/mrhoppy1/" }) {
       sizes(maxWidth: 700, maxHeight: 525) {
         ...GatsbyImageSharpSizes
       }
