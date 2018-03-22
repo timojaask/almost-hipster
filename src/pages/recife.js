@@ -82,6 +82,9 @@ export default ({ data }) => (
     <p>
       Be ready to present your ID at the entrance.
     </p>
+    <ImageGrid photos={[
+      data.recife1,
+    ]} />
     <FootnoteList footnotes={[
       { index: "1", title: "Coffee — Wikipedia", url: "https://en.wikipedia.org/wiki/Coffee" },
       { index: "2", title: "Café expresso — Wikipedia", url: "https://pt.wikipedia.org/wiki/Café_expresso" },
@@ -92,7 +95,12 @@ export default ({ data }) => (
 export const query = graphql`
   query RecifePostImages {
     cover: imageSharp(id: {regex: "/recife-cover/" }) {
-      sizes(maxWidth: 700, maxHeight: 300) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    recife1: imageSharp(id: {regex: "/recife1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
         ...GatsbyImageSharpSizes
       }
     },
