@@ -85,12 +85,26 @@ export default ({ data }) => (
     <p>
       Be ready to present your ID at the entrance.
     </p>
+    <h2>Other</h2>
+    <h4>Açaí Empório Boa Viagem</h4>
+    <p>
+      Açaí is a big thing in Recife, but I've never been a huge fan of it, until our friends introduced me to Açaí Empório — açaí self-service shop. They have lots of different flavors of açaí and things that go well with açaí! And it's absolutely delicios.
+    </p>
+    <p>
+      The place itself is very nice — clean and cozy, the staff is super friendly, and they they have a foosball table! What else would one want?
+    </p>
     <ImageGrid photos={[
-      data.recife1,
+      data.acaiemporio1,
+      data.acaiemporio2,
+      data.acaiemporio3,
+      data.acaiemporio4,
     ]} />
     <FootnoteList footnotes={[
       { index: "1", title: "Coffee — Wikipedia", url: "https://en.wikipedia.org/wiki/Coffee" },
       { index: "2", title: "Café expresso — Wikipedia", url: "https://pt.wikipedia.org/wiki/Café_expresso" },
+    ]} />
+    <ImageGrid photos={[
+      data.recife1,
     ]} />
   </div>
 );
@@ -163,6 +177,26 @@ export const query = graphql`
       }
     },
     mrhoppy1: imageSharp(id: {regex: "/mrhoppy1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    acaiemporio1: imageSharp(id: {regex: "/recife-acai-emporio1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    acaiemporio2: imageSharp(id: {regex: "/recife-acai-emporio2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    acaiemporio3: imageSharp(id: {regex: "/recife-acai-emporio3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    acaiemporio4: imageSharp(id: {regex: "/recife-acai-emporio4/" }) {
       sizes(maxWidth: 700, maxHeight: 525) {
         ...GatsbyImageSharpSizes
       }
