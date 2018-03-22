@@ -20,8 +20,8 @@ button {
 
 @media only screen and (max-width: 700px) {
   .container {
-    /* 18.72vw is a trial&error value that fits */
-    grid-auto-rows: 18.72vw;
+    /* 18.71vw is a trial&error value that fits */
+    grid-auto-rows: 18.71vw;
   }
 }
 
