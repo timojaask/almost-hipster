@@ -46,6 +46,9 @@ export default ({ data }) => (
     <p>
       Kaffe Torrefação e Treinamento is a coffee roasting and barista training shop, but they also serve coffee. What I like about this place is that you often can choose one of the two available bean varieties for your drink. Just like Borsoi, this is a very cozy place with friendly and skilled staff.
     </p>
+    <ImageGrid photos={[
+      data.kaffe1,
+    ]} />
     <h4>Castigliani</h4>
     <p>
       Castigliani Cafés Especiais is another great coffee shop, located near Casa Forte in the North West part of town. Unfortunately, I've only gone there once, but they had great coffee, and as far as I remember some vegan snacks and raw cake options.
@@ -58,6 +61,13 @@ export default ({ data }) => (
     <p>
       They only take in 20 people per night, and you cannot come without a reservation. Reservations are made via WhatsApp. Roughly 30 minutes before the opening time you will receive a message with a password that you must tell to the bouncer upon arrival.
     </p>
+    <ImageGrid photos={[
+      data.pinaco1,
+      data.pinaco2,
+      data.pinaco3,
+      data.pinaco4,
+      data.pinaco5,
+    ]} />
     <h4>Mr. Hoppy</h4>
     <p>
       A lively outdoor bar, serving only a small selection of on-tap craft beers (with around ten taps open on a typical night) and burgers. Great atmosphere and great beers. Sometimes they even have live music, but then it gets pretty crowded.
@@ -107,6 +117,36 @@ export const query = graphql`
       }
     },
     borsoi5: imageSharp(id: {regex: "/borsoi5/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    kaffe1: imageSharp(id: {regex: "/kaffe1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pinaco1: imageSharp(id: {regex: "/pinaco1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pinaco2: imageSharp(id: {regex: "/pinaco2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pinaco3: imageSharp(id: {regex: "/pinaco3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pinaco4: imageSharp(id: {regex: "/pinaco4/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pinaco5: imageSharp(id: {regex: "/pinaco5/" }) {
       sizes(maxWidth: 700, maxHeight: 525) {
         ...GatsbyImageSharpSizes
       }
