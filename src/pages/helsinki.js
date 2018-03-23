@@ -8,7 +8,7 @@ import styles from "./blogpost.module.css";
 /*
 
 Need photos from:
-- Cafe Artisan
+- Artisan Café
 - Roasberg
 - Fratello
 - Liberty or Death
@@ -23,12 +23,17 @@ Need photos from:
 - Holiday
 
 Coffee:
-Third-wave coffee shops is definitely not one of the city's strongest points, but it's got a few great options. Generally, Finnish coffee culture is 99% filter coffee made at home or at work. This is what I grew up with and I hated it. However, places like Cafe Artisan totally make up for all the bad coffee in the country.
+Third-wave coffee shops is definitely not one of the city's strongest points, but it's got a few great options. Generally, Finnish coffee culture is 99% filter coffee made at home or at work. This is what I grew up with and I hated it. However, places like Artisan Café totally make up for all the bad coffee in the country.
 
-Cafe Artisan -- Need photos
-Roasberg -- Need photos
+Artisan Café
+Jani is the owner and one of the most devoted coffee makers I've had a pleasure to meet. He once told me, that for each drink that he makes, he wants it to be perfect. So he'll redo it as many times as necessary until he gets every detail just right before serving it to a customer. Devotion to the art speaks for itself once you get to taste his work. Artisan is my favorite.
+
 Johan & Nystrom
-Fratello -- Need photos
+This super cozy coffee shop is located on a beautiful Katajanokka island. Random-looking, but at the same time very stylish decor and brick walls create a wonderful relaxing atmosphere, and a unique place.
+
+Fratello
+
+Roasberg
 
 Bars:
 I'm a sucker for a good cocktail, and I think Helsinki is the city that really spoiled me in that regard. The four cocktail bars listed below are among the best I've been to in my life, competing with cities like New York, Tel Aviv, Barcelona, and Lisbon.
@@ -55,12 +60,24 @@ export default ({ data }) => (
     <PostHeader coverImage={data.cover} name="Helsinki" />
     <div className={styles.headerSpacer}>&nbsp;</div>
     <p>
-      I feel like I left a lot of Recife unexplored, but there a few places I can write home about. Most of the places in this post are from around Boa Viagem area since that's the neighborhood where I've stayed.
+      I spent roughly one year living in Helsinki, and it became one of my favorite cities in the world. It's beautiful, neat, surrounded by wonderful nature and a sea. It also has a lot of great bars and restaurants to check out.
     </p>
     <h2>Coffee</h2>
-    <h4>Borsoi</h4>
     <p>
-      Both locations have excellent options for killing small hunger, such as sandwiches and local specialties. On weekdays in Pina location, they serve lunch of the day for R$25, which I've had a couple of times and it was delightful.
+      Third-wave coffee shops is definitely not one of the city's strongest points, but it's got a few great options. Generally, Finnish coffee culture is 99% filter coffee made at home or at work. This is what I grew up with and I hated it. However, places like Artisan Café totally make up for all the bad coffee in the country.
+    </p>
+    <h4>Artisan Café</h4>
+    <p>
+      Jani is the owner and one of the most devoted coffee makers I've had a pleasure to meet. He once told me, that for each drink that he makes, he wants it to be perfect. So he'll redo it as many times as necessary until he gets every detail just right before serving it to a customer. Devotion to the art speaks for itself once you get to taste his work. Artisan is my favorite.
+    </p>
+    <ImageGrid photos={[
+      data.artisan1,
+      data.artisan2,
+      data.artisan3,
+    ]} />
+    <h4>Johan & Nyström</h4>
+    <p>
+      This super cozy coffee shop is located on a beautiful Katajanokka island. Random-looking, but at the same time very stylish decor and brick walls create a wonderful relaxing atmosphere, and a unique place.
     </p>
   </div>
 );
@@ -68,6 +85,21 @@ export default ({ data }) => (
 export const query = graphql`
   query HelsinkiPostImages {
     cover: imageSharp(id: {regex: "/helsinki-cover/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    artisan1: imageSharp(id: {regex: "/helsinki-artisan1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    artisan2: imageSharp(id: {regex: "/helsinki-artisan2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    artisan3: imageSharp(id: {regex: "/helsinki-artisan3/" }) {
       sizes(maxWidth: 700, maxHeight: 525) {
         ...GatsbyImageSharpSizes
       }
