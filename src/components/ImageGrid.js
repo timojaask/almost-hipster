@@ -17,8 +17,6 @@ const defaultRowHeightCompact_vw = round(defaultRowHeightRegular_px / defaultPho
 
 /* TODO
 
-Add credits to photos
-
 Use https://github.com/contra/react-responsive to set row height using media queries.
 Right now this whole solution is disfunctional.
 
