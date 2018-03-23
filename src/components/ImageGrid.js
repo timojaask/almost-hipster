@@ -3,9 +3,24 @@ import Img from "gatsby-image";
 import concat from "lodash/concat";
 import drop from "lodash/drop";
 import take from "lodash/take";
+import round from "lodash/round";
 import styles from "./ImageGrid.module.css";
 
 const rotate = (array, n) => concat(drop(array, n), take(array, n));
+
+const maxScreenWidth_px = 700;
+const iPhonePhotoAspectRatio = 0.75;
+const defaultPhotoWidth_px = maxScreenWidth_px;
+const defaultPhotoHeight_px = defaultPhotoWidth_px * iPhonePhotoAspectRatio;
+const defaultRowHeightRegular_px = round(defaultPhotoHeight_px / 4);
+const defaultRowHeightCompact_vw = round(defaultRowHeightRegular_px / defaultPhotoWidth_px * 100, 2);
+
+/* TODO
+
+Use https://github.com/contra/react-responsive to set row height using media queries.
+Right now this whole solution is disfunctional.
+
+*/
 
 export class ImageGrid extends Component {
   constructor(props) {
@@ -20,7 +35,8 @@ export class ImageGrid extends Component {
   render() {
     return renderImages({
       photos: this.state.photos,
-      onPhotoSelected: idx => { this.onPhotoSelected(idx) }
+      onPhotoSelected: idx => { this.onPhotoSelected(idx) },
+      height: this.props.height ? this.props.height : defaultRowHeightRegular_px
     })
   }
 }
@@ -34,15 +50,15 @@ const styleForIndex = idx => {
   }
 }
 
-const renderImages = ({ photos, onPhotoSelected }) =>
+const renderImages = ({ photos, onPhotoSelected, height }) =>
   photos.length > 1 ?
-    <MultipleImages largePhoto={photos[0]} thumbnails={photos.slice(1)} onPhotoSelected={onPhotoSelected} /> :
+    <MultipleImages largePhoto={photos[0]} thumbnails={photos.slice(1)} onPhotoSelected={onPhotoSelected} height={height} /> :
     <OneImage photo={photos[0]} />
 
 const OneImage = ({ photo }) => <Img sizes={photo.sizes} />
 
-const MultipleImages = ({ largePhoto, thumbnails, onPhotoSelected }) =>
-  <div className={styles.container}>
+const MultipleImages = ({ largePhoto, thumbnails, onPhotoSelected, height }) =>
+  <div className={styles.container} >
     <div className={styles.largeImage}>
       <Img sizes={largePhoto.sizes} />
     </div>
