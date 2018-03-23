@@ -39,7 +39,7 @@ Bars:
 I'm a sucker for a good cocktail, and I think Helsinki is the city that really spoiled me in that regard. The four cocktail bars listed below are among the best I've been to in my life, competing with cities like New York, Tel Aviv, Barcelona, and Lisbon.
 
 Liberty or Death -- 
-Trilby & Chadwick
+Trillby & Chadwick
 Books & Antiques
 Pastor
 Kaisla
@@ -96,10 +96,40 @@ export default ({ data }) => (
     <p>
       I love great cocktails, and I think Helsinki is the city that really spoiled me in that regard. The four cocktail bars listed below are among the best I've been to in my life, competing with cities like New York, Tel Aviv, Barcelona, and Lisbon.
     </p>
-    <h4>Liberty or Death</h4>
-    <h4>Trilby & Chadwick</h4>
+    <h4>Trillby & Chadwick</h4>
+    <p>
+      One of my favorite speakeasys. Amazing old-school decor, dimmed lights, relaxing music, most pleasant service and fantastic cocktails. 4.9 / 5 rating on Facebook cannot lie.
+    </p>
+    <p>
+      The place might be challenging to find, but once you're on the right street, find a wall with black windows. Walk up a few stairs and get in. You should be able to figure it out from there.
+    </p>
+    <p>
+      It is strictly forbidden to take photos inside of the bar, and when you walk out, you must use the back door.
+    </p>
     <h4>Books & Antiques</h4>
+    <p>
+      Most intimate speakeasy, with only four small tables, candle light and relaxing music. It used to be so that you couldn't enter this place directly. Instead, you had to first go to a bar next door, 100 Dogs, and ask a bartender to let you into Books & Antiques. He would the use the phone to call next door and ask if there's space, and if so, you would have to wait a few minutes for them to prepare a table for you. Finally, he'll walk you around the corner and open the door, where you'll be greeted with a complementary glass of sparkling wine.
+    </p>
+    <p>
+      I haven't been to this bar in more than a year, and I've heard that the procedure changed a bit, and you might be able to walk straight in. Either way, the place is absolutely wonderful, with bartenders making top notch cocktails.
+    </p>
+    <ImageGrid photos={[
+      data.booksAntiques1,
+      data.booksAntiques2,
+    ]} credit={{ text: "Books & Antiques", url: "https://www.facebook.com/Books-Antiques-172870279576969/" }} />
     <h4>Pastor</h4>
+    <p>
+      In Pastor they make my favorite Whisky Sour variation, called “Sour Dog”. The place feels very high-end, but with style, and drink prices are roughly the same as in other good places. They also serve amazing food, but it is very pricy, so I wouldn't eat there unless I had a business dinner.
+    </p>
+    <ImageGrid photos={[
+      data.pastor1,
+      data.pastor2,
+      data.pastor3,
+    ]} credit={{ text: "Pastor", url: "https://www.facebook.com/pastorhelsinki/" }} />
+    <h4>Liberty or Death</h4>
+    <p>
+      Great, speakeasy inspired cocktail bar, with, surprisingly, hip-hop music playing on the background, which I really like. The place is small and gets full really quick, so avoid Fridays and Saturdays.
+    </p>
     <h4>Kaisla</h4>
   </div>
 );
@@ -151,6 +181,32 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     },
+    booksAntiques1: imageSharp(id: {regex: "/helsinki-books-antiques1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    booksAntiques2: imageSharp(id: {regex: "/helsinki-books-antiques2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pastor1: imageSharp(id: {regex: "/helsinki-pastor1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pastor2: imageSharp(id: {regex: "/helsinki-pastor2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    pastor3: imageSharp(id: {regex: "/helsinki-pastor3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
   }
 `;
+
 
