@@ -74,11 +74,33 @@ export default ({ data }) => (
       data.artisan1,
       data.artisan2,
       data.artisan3,
-    ]} />
+    ]} credit={{ text: "Artisan Café", url: "https://www.artisancafe.fi" }} />
     <h4>Johan & Nyström</h4>
     <p>
       This super cozy coffee shop is located on a beautiful Katajanokka island. Random-looking, but at the same time very stylish decor and brick walls create a wonderful relaxing atmosphere, and a unique place.
     </p>
+    <ImageGrid photos={[
+      data.johannystrom1,
+      data.johannystrom2,
+      data.johannystrom3,
+      data.johannystrom4,
+    ]} credit={{ text: "Johan & Nyström", url: "https://www.facebook.com/johanochnystrom.fi/" }} />
+    <h4>Fratello</h4>
+    <p>
+      This place is run by La Torrefazione, who have in total three locations in the city. They employ great baristas who are passionate about their craft, however, once in a while you might stumble upon a trainee, which mostly happens in one of the other locations in my personal experience.
+    </p>
+    <ImageGrid photos={[
+      data.fratello1,
+    ]} credit={{ text: "La Torrefazione", url: "https://www.facebook.com/latorrefinland/" }} />
+    <h2>Bars</h2>
+    <p>
+      I love great cocktails, and I think Helsinki is the city that really spoiled me in that regard. The four cocktail bars listed below are among the best I've been to in my life, competing with cities like New York, Tel Aviv, Barcelona, and Lisbon.
+    </p>
+    <h4>Liberty or Death</h4>
+    <h4>Trilby & Chadwick</h4>
+    <h4>Books & Antiques</h4>
+    <h4>Pastor</h4>
+    <h4>Kaisla</h4>
   </div>
 );
 
@@ -100,6 +122,31 @@ export const query = graphql`
       }
     },
     artisan3: imageSharp(id: {regex: "/helsinki-artisan3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    johannystrom1: imageSharp(id: {regex: "/helsinki-johan-nystrom1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    johannystrom2: imageSharp(id: {regex: "/helsinki-johan-nystrom2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    johannystrom3: imageSharp(id: {regex: "/helsinki-johan-nystrom3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    johannystrom4: imageSharp(id: {regex: "/helsinki-johan-nystrom4/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    fratello1: imageSharp(id: {regex: "/helsinki-fratello/" }) {
       sizes(maxWidth: 700, maxHeight: 525) {
         ...GatsbyImageSharpSizes
       }

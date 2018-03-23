@@ -17,6 +17,8 @@ const defaultRowHeightCompact_vw = round(defaultRowHeightRegular_px / defaultPho
 
 /* TODO
 
+Add credits to photos
+
 Use https://github.com/contra/react-responsive to set row height using media queries.
 Right now this whole solution is disfunctional.
 
@@ -36,7 +38,8 @@ export class ImageGrid extends Component {
     return renderImages({
       photos: this.state.photos,
       onPhotoSelected: idx => { this.onPhotoSelected(idx) },
-      height: this.props.height ? this.props.height : defaultRowHeightRegular_px
+      height: this.props.height ? this.props.height : defaultRowHeightRegular_px,
+      credit: this.props.credit
     })
   }
 }
@@ -50,10 +53,19 @@ const styleForIndex = idx => {
   }
 }
 
-const renderImages = ({ photos, onPhotoSelected, height }) =>
-  photos.length > 1 ?
-    <MultipleImages largePhoto={photos[0]} thumbnails={photos.slice(1)} onPhotoSelected={onPhotoSelected} height={height} /> :
-    <OneImage photo={photos[0]} />
+const renderImages = ({ photos, onPhotoSelected, credit, height }) =>
+  <div>
+    {photos.length > 1 ?
+      <MultipleImages largePhoto={photos[0]} thumbnails={photos.slice(1)} onPhotoSelected={onPhotoSelected} height={height} /> :
+      <OneImage photo={photos[0]} />}
+    {credit && <PhotoCredit credit={credit} />}
+  </div>
+
+const PhotoCredit = ({ credit }) =>
+  <div className={styles.creditContainer}>Photo credit: {credit.url ?
+    <a href={credit.url} target="_blank">{credit.text}</a> :
+    credit.text}
+  </div>
 
 const OneImage = ({ photo }) => <Img sizes={photo.sizes} />
 
