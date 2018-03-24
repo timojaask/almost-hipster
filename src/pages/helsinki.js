@@ -64,7 +64,7 @@ export default ({ data }) => (
     </p>
     <h2>Coffee</h2>
     <p>
-      Third-wave coffee shops is definitely not one of the city's strongest points, but it's got a few great options. Generally, Finnish coffee culture is 99% filter coffee made at home or at work. This is what I grew up with and I hated it. However, places like Artisan Café totally make up for all the bad coffee in the country.
+      Third-wave coffee shops are not one of the city's strongest points, but it's got a few great options. Finnish coffee culture is probably 99% filter coffee made at home or work. That's what I grew up with, and I hated it. However, places like Artisan Café make up for all the bad coffee in the country.
     </p>
     <h4>Artisan Café</h4>
     <p>
@@ -77,7 +77,7 @@ export default ({ data }) => (
     ]} credit={{ text: "Artisan Café", url: "https://www.artisancafe.fi" }} />
     <h4>Johan & Nyström</h4>
     <p>
-      This super cozy coffee shop is located on a beautiful Katajanokka island. Random-looking, but at the same time very stylish decor and brick walls create a wonderful relaxing atmosphere, and a unique place.
+      This super cozy coffee shop is located on a beautiful Katajanokka island. Random-looking, but at the same time very stylish decor and brick walls create a wonderfully relaxing atmosphere and a unique place.
     </p>
     <ImageGrid photos={[
       data.johannystrom1,
@@ -94,24 +94,24 @@ export default ({ data }) => (
     ]} credit={{ text: "La Torrefazione", url: "https://www.facebook.com/latorrefinland/" }} />
     <h2>Bars</h2>
     <p>
-      I love great cocktails, and I think Helsinki is the city that really spoiled me in that regard. The four cocktail bars listed below are among the best I've been to in my life, competing with cities like New York, Tel Aviv, Barcelona, and Lisbon.
+      I love great cocktails, and I think Helsinki is the city that spoiled me in that regard. The four cocktail bars listed below are among the best I've been to in my life, competing with cities like New York, Tel Aviv, Barcelona, and Lisbon.
     </p>
     <h4>Trillby & Chadwick</h4>
     <p>
-      One of my favorite speakeasys. Amazing old-school decor, dimmed lights, relaxing music, most pleasant service and fantastic cocktails. 4.9 / 5 rating on Facebook cannot lie.
+      One of my favorite speakeasy. Amazing old-school decor, dimmed lights, relaxing music, most pleasant service and fantastic cocktails. 4.9 / 5 rating on Facebook cannot lie.
     </p>
     <p>
-      The place might be challenging to find, but once you're on the right street, find a wall with black windows. Walk up a few stairs and get in. You should be able to figure it out from there.
+      The place might be challenging to find, but once you're on the right street, look for a wall with black windows. Walk up a few stairs and get in. You should be able to figure it out from there.
     </p>
     <p>
       It is strictly forbidden to take photos inside of the bar, and when you walk out, you must use the back door.
     </p>
     <h4>Books & Antiques</h4>
     <p>
-      Most intimate speakeasy, with only four small tables, candle light and relaxing music. It used to be so that you couldn't enter this place directly. Instead, you had to first go to a bar next door, 100 Dogs, and ask a bartender to let you into Books & Antiques. He would the use the phone to call next door and ask if there's space, and if so, you would have to wait a few minutes for them to prepare a table for you. Finally, he'll walk you around the corner and open the door, where you'll be greeted with a complementary glass of sparkling wine.
+      Most intimate speakeasy, with only four small tables, candlelight and relaxing music. It used to be so that you couldn't enter this place directly. Instead, you had to first go to a bar next door, 100 Dogs, and ask a bartender to let you into Books & Antiques. He would use the phone to call next door and ask if there's space, and if so, you would have to wait a few minutes for them to prepare a table for you. Finally, he'll walk you around the corner and open the door, where you'll be greeted with a complimentary glass of sparkling wine.
     </p>
     <p>
-      I haven't been to this bar in more than a year, and I've heard that the procedure changed a bit, and you might be able to walk straight in. Either way, the place is absolutely wonderful, with bartenders making top notch cocktails.
+      I haven't been to this bar for more than a year, and I've heard that the procedure changed a bit, and you might be able to walk straight in. Either way, the place is absolutely wonderful, with bartenders making top notch cocktails.
     </p>
     <ImageGrid photos={[
       data.booksAntiques1,
@@ -119,7 +119,7 @@ export default ({ data }) => (
     ]} credit={{ text: "Books & Antiques", url: "https://www.facebook.com/Books-Antiques-172870279576969/" }} />
     <h4>Pastor</h4>
     <p>
-      In Pastor they make my favorite Whisky Sour variation, called “Sour Dog”. The place feels very high-end, but with style, and drink prices are roughly the same as in other good places. They also serve amazing food, but it is very pricy, so I wouldn't eat there unless I had a business dinner.
+      In Pastor, they make my favorite Whisky Sour variation, called “Sour Dog.” The place feels very high-end, but with style, and drink prices are roughly the same as in other good bars. They also serve fantastic food, but it is very pricey, so I wouldn't eat there unless I had a business dinner.
     </p>
     <ImageGrid photos={[
       data.pastor1,
@@ -128,7 +128,7 @@ export default ({ data }) => (
     ]} credit={{ text: "Pastor", url: "https://www.facebook.com/pastorhelsinki/" }} />
     <h4>Liberty or Death</h4>
     <p>
-      Great, speakeasy inspired cocktail bar, with, surprisingly, hip-hop music playing on the background, which I really like. The place is small and gets full really quick, so avoid Fridays and Saturdays.
+      Great, speakeasy-inspired cocktail bar, with, surprisingly, hip-hop music playing in the background, which I really like. The place is small and gets full quick, so avoid Fridays and Saturdays.
     </p>
     <ImageGrid photos={[
       data.libertyOrDeath1,
@@ -136,18 +136,18 @@ export default ({ data }) => (
     ]} credit={{ text: "Liberty or Death", url: "https://www.facebook.com/libertyordeathbar/" }} />
     <h4>Kaisla</h4>
     <p>
-      Big beer bar, with large variety of beers, and helpful staff.
+      Big beer bar, with a large variety of beers, and helpful staff.
     </p>
     <ImageGrid photos={[
       data.kaisla1,
     ]} credit={{ text: "Kaisla", url: "https://www.raflaamo.fi/en/helsinki/kaisla" }} />
     <h2>Food:</h2>
     <p>
-      There are so many great places to eat in Helsinki, that it would make for a very long blog post if I tried to cover it all. And I'd probably fail at that. So here are a few of my personal favorites.
+      There are so many excellent places to eat in Helsinki, that it would make for a very long blog post if I tried to cover it all. And I'd probably fail at that. So here are a few of my personal favorites.
     </p>
     <h4>Block By Dylan</h4>
     <p>
-      A perfect Saturday brunch place! And for all you USA folks out there, in Finland brunch doesn't include alcohol by default. But it does include unlimited food — a wide variety of starters, main courses, deserts, non-alcoholic drinks — pick whatever you want for a fixed price. And no one stops you from getting a bottle of sparkling for an additional fee. A must have.
+      A perfect Saturday brunch place! And for all you USA folks out there, in Finland brunch doesn't include alcohol by default. But it does come with unlimited food — a wide variety of starters, main courses, desserts, non-alcoholic drinks — pick whatever you want for a fixed price. And no one stops you from getting a bottle of sparkling for an additional fee. A must have.
     </p>
     <ImageGrid photos={[
       data.blockDylan1,
@@ -169,17 +169,17 @@ export default ({ data }) => (
     ]} credit={{ text: "Momotoko", url: "http://www.momotoko.com" }} />
     <h4>Samrat</h4>
     <p>
-      Samrat is a cozy and neat restaurant, with most delicious Indian food, and it won't leave your clothes smelling like curry for the rest of the day. Curry dishes and naan breads to die for.
+      Samrat is a cozy and neat restaurant, with most delicious Indian food, and it won't leave your clothes smelling like curry for the rest of the day. Curry dishes and naan bread to die for.
     </p>
     <ImageGrid photos={[
       data.samrat1,
     ]} credit={{ text: "TripAdvisor — Kati M", url: "https://www.tripadvisor.com/members/156katim" }} />
     <h4>Skiffer</h4>
     <p>
-      Very creative and tasty pizzas, in a rustic, sailor-themed restaurant. Ice cream or strawberries on a pizza? You gotta try!
+      Very creative and tasty pizzas, in a rustic, sailor-themed restaurant. Ice cream or strawberries on a pizza? You have to try!
     </p>
     <p>
-      They've got a few locations in Helsinki. Erottaja location is the easist to get to from city centre, but if it's summer and wanna spend great time in a sea environment, head over to Liuskaluoto island, and enjoy sun, beer, the sea, and some amazing pizza.
+      They've got a few locations in Helsinki. Erottaja location is the easiest to get to from city center, but if it's summer and wanna spend a great time in a sea environment, head over to Liuskaluoto island, and enjoy the sun, beer, the sea, and some fantastic pizza.
     </p>
     <ImageGrid photos={[
       data.skiffer1,
@@ -190,10 +190,10 @@ export default ({ data }) => (
     ]} credit={{ text: "Skiffer", url: "https://www.facebook.com/skifferrestaurant/" }} />
     <h4>Baskeri & Basso</h4>
     <p>
-      I've only been to Baskeri & Basso once, but it left an unforgetable impression on me. We had a romanic dinner in this beautiful candle-light lit place, with lots of great wine and food, and wonderful conversations with the staff and the owner of the place. They even gave us a home-baked baguette to go, on the house.
+      I've only been to Baskeri & Basso once, but it left an unforgettable impression on me. We had a romantic dinner in this beautiful candle-light lit place, with lots of great wine and food, and nice conversations with the staff and the owner of the restaurant. They even gave us a home-baked baguette to go, on the house.
     </p>
     <p>
-      Note that this place is high-end, and is more suitable for a special occasion, as a usual meal would probably end up costing twice as much as other places on this list.
+      Note that this place is high-end, and is more suitable for a special occasion, as a typical meal would probably end up costing twice as much as other places on this list.
     </p>
     <ImageGrid photos={[
       data.basbas1,
@@ -204,7 +204,7 @@ export default ({ data }) => (
     ]} credit={{ text: "Baskeri & Basso", url: "http://basbas.fi/bistro/" }} />
     <h4>Holiday</h4>
     <p>
-      I've had the most amazing veef (vaggie beef substitute) dish ever in Holiday. Plenty of outdoor seating, perfect for nice summer evenings, on a beautiful Katajanokka island.
+      I've had the most amazing veef (veggie beef substitute) dish ever in Holiday. Plenty of outdoor seating, perfect for nice summer evenings, on a beautiful Katajanokka island.
     </p>
     <ImageGrid photos={[
       data.holiday1,
