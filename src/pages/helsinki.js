@@ -130,7 +130,47 @@ export default ({ data }) => (
     <p>
       Great, speakeasy inspired cocktail bar, with, surprisingly, hip-hop music playing on the background, which I really like. The place is small and gets full really quick, so avoid Fridays and Saturdays.
     </p>
+    <ImageGrid photos={[
+      data.libertyOrDeath1,
+      data.libertyOrDeath2,
+    ]} credit={{ text: "Liberty or Death", url: "https://www.facebook.com/libertyordeathbar/" }} />
     <h4>Kaisla</h4>
+    <p>
+      Big beer bar, with large variety of beers, and helpful staff.
+    </p>
+    <ImageGrid photos={[
+      data.kaisla1,
+    ]} credit={{ text: "Kaisla", url: "https://www.raflaamo.fi/en/helsinki/kaisla" }} />
+    <h2>Food:</h2>
+    <p>
+      There are so many great places to eat in Helsinki, that it would make for a very long blog post if I tried to cover it all. And I'd probably fail at that. So here are a few of my personal favorites.
+    </p>
+    <h4>Block By Dylan</h4>
+    <p>
+      A perfect Saturday brunch place! And for all you USA folks out there, in Finland brunch doesn't include alcohol by default. But it does include unlimited food — a wide variety of starters, main courses, deserts, non-alcoholic drinks — pick whatever you want for a fixed price. And no one stops you from getting a bottle of sparkling for an additional fee. A must have.
+    </p>
+    <ImageGrid photos={[
+      data.blockDylan1,
+      data.blockDylan2,
+      data.blockDylan3,
+      data.blockDylan4,
+      data.blockDylan5,
+    ]} credit={{ text: "Block By Dylan", url: "https://www.dylan.fi/block/" }} />
+    <h4>Momotoko</h4>
+    <p>
+    </p>
+    <h4>Samrat</h4>
+    <p>
+    </p>
+    <h4>Piece'n'Love</h4>
+    <p>
+    </p>
+    <h4>Baskeri & Basso</h4>
+    <p>
+    </p>
+    <h4>Holiday</h4>
+    <p>
+    </p>
   </div>
 );
 
@@ -203,6 +243,46 @@ export const query = graphql`
     },
     pastor3: imageSharp(id: {regex: "/helsinki-pastor3/" }) {
       sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    libertyOrDeath1: imageSharp(id: {regex: "/helsinki-liberty-death1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    libertyOrDeath2: imageSharp(id: {regex: "/helsinki-liberty-death2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    kaisla1: imageSharp(id: {regex: "/helsinki-kaisla1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    blockDylan1: imageSharp(id: {regex: "/helsinki-block-dylan1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    blockDylan2: imageSharp(id: {regex: "/helsinki-block-dylan2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    blockDylan3: imageSharp(id: {regex: "/helsinki-block-dylan3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    blockDylan4: imageSharp(id: {regex: "/helsinki-block-dylan4/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    blockDylan5: imageSharp(id: {regex: "/helsinki-block-dylan5/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
         ...GatsbyImageSharpSizes
       }
     },
