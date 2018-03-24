@@ -212,7 +212,9 @@ export default ({ data }) => (
       data.holiday3,
       data.holiday4,
       data.holiday5,
-    ]} credit={{ text: "Skiffer", url: "https://www.facebook.com/skifferrestaurant/" }} />
+    ]} credit={{ text: "Holiday", url: "https://www.facebook.com/HolidayBarHelsinki/" }} />
+    <br />
+    <br />
   </div>
 );
 
