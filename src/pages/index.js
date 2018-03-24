@@ -17,7 +17,7 @@ const ListItem = ({ name, coverImage, path, date }) =>
 
 export default ({ data }) =>
   <div className={styles.container}>
-    <ListItem name="Recife" coverImage={data.recifeCover} path="/recife" date={"Apr 2018"} />
+    <ListItem name="Recife" coverImage={data.recifeCover} path="/recife" date={"Mar 2018"} />
     <ListItem name="Helsinki" coverImage={data.helsinkiCover} path="/helsinki" date={"Oct 2016"} />
   </div>
 

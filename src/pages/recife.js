@@ -15,7 +15,7 @@ TODO:
 
 export default ({ data }) => (
   <div>
-    <PostHeader coverImage={data.cover} name="Recife" date={"Apr 2018"} />
+    <PostHeader coverImage={data.cover} name="Recife" date={"Mar 2018"} />
     <div className={styles.headerSpacer}>&nbsp;</div>
     <p>
       I feel like I left a lot of Recife unexplored, but there a few places I can write home about. Most of the places in this post are from around Boa Viagem area since that's the neighborhood where I've stayed.
