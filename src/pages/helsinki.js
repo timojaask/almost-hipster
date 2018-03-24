@@ -158,7 +158,15 @@ export default ({ data }) => (
     ]} credit={{ text: "Block By Dylan", url: "https://www.dylan.fi/block/" }} />
     <h4>Momotoko</h4>
     <p>
+      Fantastic ramen place in the heart of the city. This is the restaurant that made me fall in love with ramen.
     </p>
+    <ImageGrid photos={[
+      data.momotoko1,
+      data.momotoko2,
+      data.momotoko3,
+      data.momotoko4,
+      data.momotoko5,
+    ]} credit={{ text: "Momotoko", url: "http://www.momotoko.com" }} />
     <h4>Samrat</h4>
     <p>
     </p>
@@ -282,6 +290,31 @@ export const query = graphql`
       }
     },
     blockDylan5: imageSharp(id: {regex: "/helsinki-block-dylan5/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    momotoko1: imageSharp(id: {regex: "/helsinki-momotoko1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    momotoko2: imageSharp(id: {regex: "/helsinki-momotoko2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    momotoko3: imageSharp(id: {regex: "/helsinki-momotoko3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    momotoko4: imageSharp(id: {regex: "/helsinki-momotoko4/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    momotoko5: imageSharp(id: {regex: "/helsinki-momotoko5/" }) {
       sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
         ...GatsbyImageSharpSizes
       }
