@@ -169,7 +169,11 @@ export default ({ data }) => (
     ]} credit={{ text: "Momotoko", url: "http://www.momotoko.com" }} />
     <h4>Samrat</h4>
     <p>
+      Samrat is a cozy and neat restaurant, with most delicious Indian food, and it won't leave your clothes smelling like curry for the rest of the day. Curry dishes and naan breads to die for.
     </p>
+    <ImageGrid photos={[
+      data.samrat1,
+    ]} credit={{ text: "TripAdvisor — Kati M", url: "https://www.tripadvisor.com/members/156katim" }} />
     <h4>Piece'n'Love</h4>
     <p>
     </p>
@@ -315,6 +319,11 @@ export const query = graphql`
       }
     },
     momotoko5: imageSharp(id: {regex: "/helsinki-momotoko5/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    samrat1: imageSharp(id: {regex: "/helsinki-samrat1/" }) {
       sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
         ...GatsbyImageSharpSizes
       }
