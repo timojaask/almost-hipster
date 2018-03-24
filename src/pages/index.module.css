@@ -6,6 +6,7 @@
 .listItemContainer {
   position: relative;
   overflow: hidden;
+  margin-bottom: 1px;
 }
 
 .listItemLink {
