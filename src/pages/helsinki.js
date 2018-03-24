@@ -174,15 +174,45 @@ export default ({ data }) => (
     <ImageGrid photos={[
       data.samrat1,
     ]} credit={{ text: "TripAdvisor — Kati M", url: "https://www.tripadvisor.com/members/156katim" }} />
-    <h4>Piece'n'Love</h4>
+    <h4>Skiffer</h4>
     <p>
+      Very creative and tasty pizzas, in a rustic, sailor-themed restaurant. Ice cream or strawberries on a pizza? You gotta try!
     </p>
+    <p>
+      They've got a few locations in Helsinki. Erottaja location is the easist to get to from city centre, but if it's summer and wanna spend great time in a sea environment, head over to Liuskaluoto island, and enjoy sun, beer, the sea, and some amazing pizza.
+    </p>
+    <ImageGrid photos={[
+      data.skiffer1,
+      data.skiffer2,
+      data.skiffer3,
+      data.skiffer4,
+      data.skiffer5,
+    ]} credit={{ text: "Skiffer", url: "https://www.facebook.com/skifferrestaurant/" }} />
     <h4>Baskeri & Basso</h4>
     <p>
+      I've only been to Baskeri & Basso once, but it left an unforgetable impression on me. We had a romanic dinner in this beautiful candle-light lit place, with lots of great wine and food, and wonderful conversations with the staff and the owner of the place. They even gave us a home-baked baguette to go, on the house.
     </p>
+    <p>
+      Note that this place is high-end, and is more suitable for a special occasion, as a usual meal would probably end up costing twice as much as other places on this list.
+    </p>
+    <ImageGrid photos={[
+      data.basbas1,
+      data.basbas2,
+      data.basbas3,
+      data.basbas4,
+      data.basbas5,
+    ]} credit={{ text: "Baskeri & Basso", url: "http://basbas.fi/bistro/" }} />
     <h4>Holiday</h4>
     <p>
+      I've had the most amazing veef (vaggie beef substitute) dish ever in Holiday. Plenty of outdoor seating, perfect for nice summer evenings, on a beautiful Katajanokka island.
     </p>
+    <ImageGrid photos={[
+      data.holiday1,
+      data.holiday2,
+      data.holiday3,
+      data.holiday4,
+      data.holiday5,
+    ]} credit={{ text: "Skiffer", url: "https://www.facebook.com/skifferrestaurant/" }} />
   </div>
 );
 
@@ -325,6 +355,81 @@ export const query = graphql`
     },
     samrat1: imageSharp(id: {regex: "/helsinki-samrat1/" }) {
       sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    skiffer1: imageSharp(id: {regex: "/helsinki-skiffer1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    skiffer2: imageSharp(id: {regex: "/helsinki-skiffer2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    skiffer3: imageSharp(id: {regex: "/helsinki-skiffer3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    skiffer4: imageSharp(id: {regex: "/helsinki-skiffer4/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    skiffer5: imageSharp(id: {regex: "/helsinki-skiffer5/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    basbas1: imageSharp(id: {regex: "/helsinki-basbas1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    basbas2: imageSharp(id: {regex: "/helsinki-basbas2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    basbas3: imageSharp(id: {regex: "/helsinki-basbas3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    basbas4: imageSharp(id: {regex: "/helsinki-basbas4/" }) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    basbas5: imageSharp(id: {regex: "/helsinki-basbas5/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    holiday1: imageSharp(id: {regex: "/helsinki-holiday1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    holiday2: imageSharp(id: {regex: "/helsinki-holiday2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    holiday3: imageSharp(id: {regex: "/helsinki-holiday3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    holiday4: imageSharp(id: {regex: "/helsinki-holiday4/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    holiday5: imageSharp(id: {regex: "/helsinki-holiday5/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
         ...GatsbyImageSharpSizes
       }
     },
