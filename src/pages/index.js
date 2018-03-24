@@ -18,6 +18,7 @@ const ListItem = ({ name, coverImage, path, date }) =>
 export default ({ data }) =>
   <div className={styles.container}>
     <ListItem name="Recife" coverImage={data.recifeCover} path="/recife" date={"Mar 2018"} />
+    <ListItem name="Oradea" coverImage={data.oradeaCover} path="/oradea" date={"Jan 2018"} />
     <ListItem name="Helsinki" coverImage={data.helsinkiCover} path="/helsinki" date={"Oct 2016"} />
   </div>
 
@@ -29,6 +30,11 @@ export const query = graphql`
       }
     },
     helsinkiCover: imageSharp(id: { regex: "/helsinki-cover/" }) {
+      sizes(maxWidth: 700, maxHeight: 200) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    oradeaCover: imageSharp(id: { regex: "/oradea-cover/" }) {
       sizes(maxWidth: 700, maxHeight: 200) {
         ...GatsbyImageSharpSizes
       }
