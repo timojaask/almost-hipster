@@ -15,16 +15,17 @@ const ListItem = ({ name, coverImage, path }) =>
 export default ({ data }) =>
   <div className={styles.container}>
     <ListItem name="Recife" coverImage={data.recifeCover} path="/recife" />
+    <ListItem name="Helsinki" coverImage={data.helsinkiCover} path="/helsinki" />
   </div>
 
 export const query = graphql`
-  query GatsbyImageSampleQuery {
-    recifeCover: imageSharp(id: { regex: "/recife-cover.jpg/" }) {
+  query IndexImageQuery {
+    recifeCover: imageSharp(id: { regex: "/recife-cover/" }) {
       sizes(maxWidth: 700, maxHeight: 200) {
         ...GatsbyImageSharpSizes
       }
     },
-    newYorkCover: imageSharp(id: { regex: "/new-york-cover.jpg/" }) {
+    helsinkiCover: imageSharp(id: { regex: "/helsinki-cover/" }) {
       sizes(maxWidth: 700, maxHeight: 200) {
         ...GatsbyImageSharpSizes
       }

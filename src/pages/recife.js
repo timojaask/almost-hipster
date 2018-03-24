@@ -3,7 +3,15 @@ import Img from "gatsby-image";
 import PostHeader from "../components/PostHeader";
 import { FootnoteLink, FootnoteList } from "../components/Footnotes"
 import { ImageGrid } from "../components/ImageGrid"
-import styles from "./recife.module.css";
+import styles from "./blogpost.module.css";
+
+/*
+
+TODO:
+- Udon
+- Bercy
+
+*/
 
 export default ({ data }) => (
   <div>
