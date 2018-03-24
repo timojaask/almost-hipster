@@ -57,7 +57,7 @@ Holiday
 */
 export default ({ data }) => (
   <div>
-    <PostHeader coverImage={data.cover} name="Helsinki" />
+    <PostHeader coverImage={data.cover} name="Helsinki" date={"Oct 2016"} />
     <div className={styles.headerSpacer}>&nbsp;</div>
     <p>
       I spent roughly one year living in Helsinki, and it became one of my favorite cities in the world. It's beautiful, neat, surrounded by wonderful nature and a sea. It also has a lot of great bars and restaurants to check out.
