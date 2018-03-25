@@ -1,18 +1,42 @@
-import React from "react";
+import React, { Component } from "react";
 import Img from "gatsby-image";
 import Helmet from 'react-helmet';
 import PostHeader from "../components/PostHeader";
 import { FootnoteLink, FootnoteList } from "../components/Footnotes"
 import { ImageGrid } from "../components/ImageGrid"
+import GoogleMapReact from 'google-map-react';
 import styles from "./blogpost.module.css";
 
-/*
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-TODO:
-- Udon
-- Bercy
+class Map extends Component {
+  static defaultProps = {
+    center: {
+      lat: 59.95,
+      lng: 30.33
+    },
+    zoom: 13
+  };
 
-*/
+  render() {
+    return (
+      // Important! Always set the container height explicitly
+      <div style={{ height: '30vh', width: '100%' }}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: "AIzaSyCpRYd3f-wAScdIzJ3qIf4YL9WDQAmXhDo" }}
+          defaultCenter={this.props.center}
+          defaultZoom={this.props.zoom}
+        >
+          <AnyReactComponent
+            lat={59.955413}
+            lng={30.337844}
+            text={'Kreyser Avrora'}
+          />
+        </GoogleMapReact>
+      </div>
+    );
+  }
+}
 
 export default ({ data }) => (
   <div>
@@ -20,6 +44,7 @@ export default ({ data }) => (
       <title>Recife's best cafes, bars, and restaurants</title>
     </Helmet>
     <PostHeader coverImage={data.cover} name="Recife" date={"Mar 2018"} />
+    <Map />
     <div className={styles.headerSpacer}>&nbsp;</div>
     <p>
       I feel like I left a lot of Recife unexplored, but there a few places I can write home about. Most of the places in this post are from around Boa Viagem area since that's the neighborhood where I've stayed.
