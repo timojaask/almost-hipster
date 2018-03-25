@@ -1,18 +1,10 @@
-import React from "react";
-import Img from "gatsby-image";
-import Helmet from 'react-helmet';
-import PostHeader from "../components/PostHeader";
+import React from "react"
+import Img from "gatsby-image"
+import Helmet from 'react-helmet'
+import PostHeader from "../components/PostHeader"
 import { FootnoteLink, FootnoteList } from "../components/Footnotes"
 import { ImageGrid } from "../components/ImageGrid"
-import styles from "./blogpost.module.css";
-
-/*
-
-TODO:
-- Udon
-- Bercy
-
-*/
+import styles from "./blogpost.module.css"
 
 export default ({ data }) => (
   <div>
