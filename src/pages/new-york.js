@@ -353,7 +353,7 @@ export const query = graphql`
       }
     },
     morgensterns1: imageSharp(id: {regex: "/new-york-morgensterns1/" }) {
-      sizes(maxWidth: 700, maxHeight: 525, cropFocus: CENTER) {
+      sizes(maxWidth: 700, maxHeight: 525, cropFocus: NORTH) {
         ...GatsbyImageSharpSizes
       }
     },
