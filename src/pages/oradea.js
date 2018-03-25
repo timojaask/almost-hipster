@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
+import Helmet from 'react-helmet';
 import PostHeader from "../components/PostHeader";
 import { FootnoteLink, FootnoteList } from "../components/Footnotes"
 import { ImageGrid } from "../components/ImageGrid"
@@ -7,6 +8,9 @@ import styles from "./blogpost.module.css";
 
 export default ({ data }) => (
   <div>
+    <Helmet>
+      <title>Oradea's best cafes, bars, and restaurants</title>
+    </Helmet>
     <PostHeader coverImage={data.cover} name="Oradea" date={"Jan 2018"} />
     <div className={styles.headerSpacer}>&nbsp;</div>
     <p>

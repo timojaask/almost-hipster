@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import Helmet from 'react-helmet';
 import styles from "./index.module.css";
 
 const ListLink = props =>
@@ -11,6 +12,9 @@ const ListLink = props =>
 
 export default ({ children }) =>
   <div className={styles.container}>
+    <Helmet>
+      <title>Almost Hipster - cafe, bar, and restaurant recommendations</title>
+    </Helmet>
     <header className={styles.header}>
       <Link to="/" className={styles.titleContainer}>
         <h3 className={styles.title}>almost hipster</h3>
