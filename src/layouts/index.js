@@ -21,7 +21,7 @@ export default ({ children }) =>
         <h3 className={styles.title}>almost hipster</h3>
       </Link>
       <ul className={styles.list}>
-        <ListLink to="/">blog</ListLink>
+        <ListLink to="/">home</ListLink>
         <ListLink to="/about/">about</ListLink>
       </ul>
     </header>
