@@ -14,7 +14,7 @@ export default ({ data }) => (
     <PostHeader coverImage={data.cover} name="New York" date={"Aug 2017"} />
     <div className={styles.headerSpacer}>&nbsp;</div>
     <p>
-      New York is a very different city from the other cities that I've reviewd. It has so many great places that it's simply impossible to visit them all. So here are a few of my personal favorite picks, the ones that consistently delivered great experience. I lived and spent most of my time between Downtown and Midtown Manhattan, so this list is focues around that area.
+      New York is a very different city from the other cities that I've reviewd. It has so many great places that it's simply impossible to visit them all. So here are a few of my personal favorite picks, the ones that consistently delivered great experience. I lived and spent most of my time between Downtown and Midtown Manhattan, so this list is focued on that area.
     </p>
     <h2>Coffee</h2>
     <h4>Black Fox Coffee</h4>
