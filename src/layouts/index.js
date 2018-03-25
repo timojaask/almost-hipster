@@ -14,6 +14,7 @@ export default ({ children }) =>
   <div className={styles.container}>
     <Helmet>
       <title>Almost Hipster - cafe, bar, and restaurant recommendations</title>
+      <meta name="google-site-verification" content="v1QRI4GRc-Gm6BitmF7KiYT15QOLQjdQljzZK68LwjI" />
     </Helmet>
     <header className={styles.header}>
       <Link to="/" className={styles.titleContainer}>
