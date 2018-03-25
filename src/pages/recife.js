@@ -97,6 +97,25 @@ export default ({ data }) => (
     <p>
       Be ready to present your ID at the entrance.
     </p>
+    <h2>Food</h2>
+    <h4>Bercy</h4>
+    <p>
+      Bercy is a proper crepe restaurant, with a wide variety of savory and sweet crepes. Some dishes are irresistibly tasty.
+    </p>
+    <ImageGrid photos={[
+      data.bercy1,
+      data.bercy2,
+      data.bercy3,
+    ]} credit={{ text: "Bercy", url: "https://www.facebook.com/bercycrepesesaladas/" }} />
+    <h4>Udon</h4>
+    <p>
+      Fixed price sushi buffet. Pick whatever you want from a wide variety of sushi, sashimi, and other Japanese dishes. There are several sushi buffet restaurants in Recife, but Udon is, in my opinion, the nicest.
+    </p>
+    <ImageGrid photos={[
+      data.udon1,
+      data.udon2,
+      data.udon3,
+    ]} credit={{ text: "Udon", url: "https://www.facebook.com/UdonCozinhaOriental/" }} />
     <h2>Other</h2>
     <h4>Açaí Empório Boa Viagem</h4>
     <p>
@@ -212,6 +231,36 @@ export const query = graphql`
       sizes(maxWidth: 700, maxHeight: 525) {
         ...GatsbyImageSharpSizes
       }
-    }
+    },
+    bercy1: imageSharp(id: {regex: "/recife-bercy1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    bercy2: imageSharp(id: {regex: "/recife-bercy2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    bercy3: imageSharp(id: {regex: "/recife-bercy3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    udon1: imageSharp(id: {regex: "/recife-udon1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    udon2: imageSharp(id: {regex: "/recife-udon2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    udon3: imageSharp(id: {regex: "/recife-udon3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
   }
 `;
