@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import PostHeader from "../components/PostHeader"
 import { FootnoteLink, FootnoteList } from "../components/Footnotes"
 import { ImageGrid } from "../components/ImageGrid"
+import { ExternalLinks } from "../components/ExternalLinks"
 import styles from "./blogpost.module.css"
 
 export default ({ data }) => (
@@ -46,6 +47,7 @@ export default ({ data }) => (
       data.borsoi4,
       data.borsoi5,
     ]} />
+    <ExternalLinks facebook="https://www.facebook.com/borsoicafeclube/" instagram="https://www.instagram.com/borsoicafeclube/" />
     <h4>Kaffe</h4>
     <p>
       Kaffe Torrefação e Treinamento is a coffee roasting and barista training shop, but they also serve coffee. What I like about this place is that you often can choose one of the two available bean varieties for your drink. Just like Borsoi, this is a very cozy place with friendly and skilled staff.
@@ -53,10 +55,7 @@ export default ({ data }) => (
     <ImageGrid photos={[
       data.kaffe1,
     ]} />
-    <h4>Castigliani</h4>
-    <p>
-      Castigliani Cafés Especiais is another great coffee shop, located near Casa Forte in the North West part of town. Unfortunately, I've only gone there once, but they had great coffee, and as far as I remember some vegan snacks and raw cake options.
-    </p>
+    <ExternalLinks website="https://www.sympla.com.br/kaffett" facebook="https://www.facebook.com/kaffett/" instagram="https://www.instagram.com/kaffe.tt/" />
     <h2>Bars</h2>
     <h4>Pina Cocktails & Co</h4>
     <p>
@@ -72,6 +71,7 @@ export default ({ data }) => (
       data.pinaco4,
       data.pinaco5,
     ]} />
+    <ExternalLinks website="https://www.pinacocktails.com" facebook="https://www.facebook.com/pinacocktails/" instagram="https://www.instagram.com/pinacocktails/" />
     <h4>Mr. Hoppy</h4>
     <p>
       A lively outdoor bar, serving only a small selection of on-tap craft beers (with around ten taps open on a typical night) and burgers. Great atmosphere and great beers. Sometimes they even have live music, but then it gets pretty crowded.
@@ -79,6 +79,7 @@ export default ({ data }) => (
     <ImageGrid photos={[
       data.mrhoppy1,
     ]} />
+    <ExternalLinks website="http://mrhoppy.negocio.site" facebook="https://www.facebook.com/MrHoppyBoaViagem/" instagram="https://www.instagram.com/mrhoppyboaviagem/" />
     <h4>Be Hookah</h4>
     <p>
       A somewhat hidden outdoor hookah bar, with a decent selection of tobacco flavors. They serve all the typical alcoholic drinks, plus a few house specials.
@@ -89,6 +90,7 @@ export default ({ data }) => (
     <p>
       Be ready to present your ID at the entrance.
     </p>
+    <ExternalLinks facebook="https://www.facebook.com/BeHookah/" instagram="https://www.instagram.com/behookah/" />
     <h2>Food</h2>
     <h4>Bercy</h4>
     <p>
@@ -99,6 +101,7 @@ export default ({ data }) => (
       data.bercy2,
       data.bercy3,
     ]} credit={{ text: "Bercy", url: "https://www.facebook.com/bercycrepesesaladas/" }} />
+    <ExternalLinks website="http://www.bercyvillage.com.br" facebook="https://www.facebook.com/bercycrepesesaladas/" instagram="https://www.instagram.com/bercy_village/" />
     <h4>Udon</h4>
     <p>
       Fixed price sushi buffet. Pick whatever you want from a wide variety of sushi, sashimi, and other Japanese dishes. There are several sushi buffet restaurants in Recife, but Udon is, in my opinion, the nicest.
@@ -108,6 +111,7 @@ export default ({ data }) => (
       data.udon2,
       data.udon3,
     ]} credit={{ text: "Udon", url: "https://www.facebook.com/UdonCozinhaOriental/" }} />
+    <ExternalLinks website="https://udon.com.br" facebook="https://www.facebook.com/UdonCozinhaOriental/" instagram="https://www.instagram.com/udoncozinhaoriental/" />
     <h2>Other</h2>
     <h4>Açaí Empório Boa Viagem</h4>
     <p>
@@ -122,6 +126,7 @@ export default ({ data }) => (
       data.acaiemporio3,
       data.acaiemporio4,
     ]} />
+    <ExternalLinks website="http://acaiemporio.com.br" facebook="https://www.facebook.com/acaiemporio/" instagram="https://www.instagram.com/acaiemporio/" />
     <FootnoteList footnotes={[
       { index: "1", title: "Coffee — Wikipedia", url: "https://en.wikipedia.org/wiki/Coffee" },
       { index: "2", title: "Café expresso — Wikipedia", url: "https://pt.wikipedia.org/wiki/Café_expresso" },
