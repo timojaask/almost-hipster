@@ -19,6 +19,7 @@ export default ({ data }) =>
   <div className={styles.container}>
     <ListItem name="Recife" coverImage={data.recifeCover} path="/recife" date={"Mar 2018"} />
     <ListItem name="Oradea" coverImage={data.oradeaCover} path="/oradea" date={"Jan 2018"} />
+    <ListItem name="New York" coverImage={data.newYorkCover} path="/new-york" date={"Aug 2017"} />
     <ListItem name="Helsinki" coverImage={data.helsinkiCover} path="/helsinki" date={"Oct 2016"} />
   </div>
 
@@ -29,15 +30,20 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     },
+    oradeaCover: imageSharp(id: { regex: "/oradea-cover/" }) {
+      sizes(maxWidth: 700, maxHeight: 200) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    newYorkCover: imageSharp(id: { regex: "/new-york-cover/" }) {
+      sizes(maxWidth: 700, maxHeight: 200, cropFocus: CENTER) {
+        ...GatsbyImageSharpSizes
+      }
+    },
     helsinkiCover: imageSharp(id: { regex: "/helsinki-cover/" }) {
       sizes(maxWidth: 700, maxHeight: 200) {
         ...GatsbyImageSharpSizes
       }
     },
-    oradeaCover: imageSharp(id: { regex: "/oradea-cover/" }) {
-      sizes(maxWidth: 700, maxHeight: 200) {
-        ...GatsbyImageSharpSizes
-      }
-    }
   }
 `;
