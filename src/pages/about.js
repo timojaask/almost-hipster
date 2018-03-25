@@ -8,7 +8,7 @@ export default () => (
     </Helmet>
     <h1>About</h1>
     <p>
-      Tips and reviews of places, mostly good coffee, good drinks and nice vibes.
+      Cafe, bar, and restaurant recommendations, based on my subjective opinion.
     </p>
   </div>
 );
