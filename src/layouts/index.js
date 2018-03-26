@@ -26,4 +26,7 @@ export default ({ children }) =>
       </ul>
     </header>
     {children()}
+    <div className={styles.footer}>
+      <a href="https://www.instagram.com/almosthipsterblog/" target="_blank">Almost Hipster Instagram</a>
+    </div>
   </div>

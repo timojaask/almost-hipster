@@ -10,5 +10,9 @@ export default () => (
     <p>
       Cafe, bar, and restaurant recommendations, based on my subjective opinion.
     </p>
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:contact@almosthipster.net">contact@almosthipster.net</a>
+    </p>
   </div>
 );
