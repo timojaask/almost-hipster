@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import PostHeader from "../components/PostHeader";
 import { FootnoteLink, FootnoteList } from "../components/Footnotes"
 import { ImageGrid } from "../components/ImageGrid"
+import { ExternalLinks } from "../components/ExternalLinks"
 import styles from "./blogpost.module.css";
 
 export default ({ data }) => (
@@ -29,6 +30,7 @@ export default ({ data }) => (
       data.streetCoffee2,
       data.streetCoffee3,
     ]} />
+    <ExternalLinks facebook="https://www.facebook.com/streetcoffeeroasters/" />
     <h4>Genus Coffee</h4>
     <p>
       At the time of writing, Genus wasn't even a physical shop. They had the whole espresso machine and grinder set up on top of a bicycle in a city park. Don't let that little detail put you off because the coffee they make is heavenly. Talk to the owner when you stop by, he's a very nice guy and can talk a lot about coffee-making business.
@@ -37,6 +39,7 @@ export default ({ data }) => (
       data.genusCoffee1,
       data.genusCoffee2,
     ]} />
+    <ExternalLinks facebook="https://www.facebook.com/genuscoffee/" instagram="https://www.instagram.com/genuscoffee/" />
     <h2>Bars</h2>
     <h4>Moszkva</h4>
     <p>
@@ -45,6 +48,7 @@ export default ({ data }) => (
     <ImageGrid photos={[
       data.moszkva1,
     ]} />
+    <ExternalLinks website="http://moszkvacafe.business.site" facebook="https://www.facebook.com/MoszkvaCafe/" instagram="https://www.instagram.com/moszkvacafe/" />
     <h4>Gekko Pub</h4>
     <p>
       Similar style to Moszkva, with lots of seemingly random decorations all over the place, and a nice inner yard area. Darts and foosball for your entertainment.
@@ -55,10 +59,12 @@ export default ({ data }) => (
       data.gekko3,
       data.gekko4,
     ]} credit={{ text: "Gekko Pub", url: "https://www.facebook.com/GekkoNagyvarad/" }} />
+    <ExternalLinks facebook="https://www.facebook.com/GekkoNagyvarad/" instagram="https://www.instagram.com/gekkopub/" />
     <h4>Kosher</h4>
     <p>
       Quite, small and cozy — a perfect place to relax with friends over hummus and a couple of bottles of wine.
     </p>
+    <ExternalLinks facebook="https://www.facebook.com/KosherWineCoffeeAndJazz/" />
     <h2>Food</h2>
     <h4>ReWine</h4>
     <p>
@@ -69,6 +75,7 @@ export default ({ data }) => (
       data.rewine2,
       data.rewine3,
     ]} />
+    <ExternalLinks website="https://www.rewine.ro" facebook="https://www.facebook.com/rewine.ro/" instagram="https://www.instagram.com/rewine.ro/" />
     <h4>Spoon</h4>
     <p>
       The restaurant is hanging literally above the river, with floor to ceiling windows and great views. The food is excellent, and the three-course 35 lei business lunch is a steal.
@@ -77,6 +84,7 @@ export default ({ data }) => (
       data.spoon1,
       data.spoon2,
     ]} />
+    <ExternalLinks facebook="https://www.facebook.com/spoonbarandgrill/" instagram="https://www.instagram.com/mrhoppyboaviagem/" />
     <h4>Suvlaki</h4>
     <p>
       Some of the best Greek food restaurants I've ever been to, with friendly staff, pretty interior, and very low prices. I used to come here almost every other day for lunch.
@@ -86,6 +94,7 @@ export default ({ data }) => (
       data.suvlaki2,
       data.suvlaki3,
     ]} credit={{ text: "Suvlaki", url: "https://www.facebook.com/Suvlaki-Grill-House-1157508237602697/" }} />
+    <ExternalLinks facebook="https://www.facebook.com/Suvlaki-Grill-House-1157508237602697/" />
     <h4>Wok'n Roll</h4>
     <p>
       Wok, soups, and noodles — great restaurant for a quick lunch without hurting your wallet.
@@ -93,6 +102,7 @@ export default ({ data }) => (
     <ImageGrid photos={[
       data.woknroll1,
     ]} />
+    <ExternalLinks facebook="https://www.facebook.com/wokandrolloradea/" />
     <h4>Baraw</h4>
     <p>
       Brand new, higher-end hamburger restaurant — the kind where you order a bottle of wine and appetizers along with your burger. Also, serve excellent pasta. At the same time, it's reasonably cheap. Good for having dinner with friends in a pleasant environment.
@@ -102,6 +112,7 @@ export default ({ data }) => (
       data.baraw2,
       data.baraw3,
     ]} credit={{ text: "Baraw", url: "https://www.facebook.com/BarawCafe/" }} />
+    <ExternalLinks facebook="https://www.facebook.com/BarawCafe/" />
     <br />
     <br />
   </div>

@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import PostHeader from "../components/PostHeader";
 import { FootnoteLink, FootnoteList } from "../components/Footnotes"
 import { ImageGrid } from "../components/ImageGrid"
+import { ExternalLinks } from "../components/ExternalLinks"
 import styles from "./blogpost.module.css";
 
 export default ({ data }) => (
@@ -29,6 +30,7 @@ export default ({ data }) => (
       data.artisan2,
       data.artisan3,
     ]} credit={{ text: "Artisan Café", url: "https://www.artisancafe.fi" }} />
+    <ExternalLinks website="https://www.artisancafe.fi" facebook="https://www.facebook.com/artisanhelsinki/" instagram="https://www.instagram.com/artisanhelsinki/" />
     <h4>Johan & Nyström</h4>
     <p>
       This super cozy coffee shop is located on a beautiful Katajanokka island. Random-looking, but at the same time very stylish decor and brick walls create a wonderfully relaxing atmosphere and a unique place.
@@ -39,6 +41,7 @@ export default ({ data }) => (
       data.johannystrom3,
       data.johannystrom4,
     ]} credit={{ text: "Johan & Nyström", url: "https://www.facebook.com/johanochnystrom.fi/" }} />
+    <ExternalLinks website="https://johanochnystrom.fi" facebook="https://www.facebook.com/johanochnystrom.fi/" instagram="https://www.instagram.com/johanochnystrom/" />
     <h4>Fratello</h4>
     <p>
       This place is run by La Torrefazione, who have in total three locations in the city. They employ great baristas who are passionate about their craft, however, once in a while you might stumble upon a trainee, which mostly happens in one of the other locations in my personal experience.
@@ -46,6 +49,7 @@ export default ({ data }) => (
     <ImageGrid photos={[
       data.fratello1,
     ]} credit={{ text: "La Torrefazione", url: "https://www.facebook.com/latorrefinland/" }} />
+    <ExternalLinks website="http://www.latorre.fi" facebook="https://www.facebook.com/latorrefinland/" instagram="https://www.instagram.com/latorrefazione/" />
     <h2>Bars</h2>
     <p>
       I love great cocktails, and I think Helsinki is the city that spoiled me in that regard. The four cocktail bars listed below are among the best I've been to in my life, competing with cities like New York, Tel Aviv, Barcelona, and Lisbon.
@@ -60,6 +64,7 @@ export default ({ data }) => (
     <p>
       It is strictly forbidden to take photos inside of the bar, and when you walk out, you must use the back door.
     </p>
+    <ExternalLinks website="www.trillbychadwick.fi" facebook="https://www.facebook.com/Trillby-Chadwick-1397791710487953/" instagram="https://www.instagram.com/trillbychadwick/" />
     <h4>Books & Antiques</h4>
     <p>
       Most intimate speakeasy, with only four small tables, candlelight and relaxing music. It used to be so that you couldn't enter this place directly. Instead, you had to first go to a bar next door, 100 Dogs, and ask a bartender to let you into Books & Antiques. He would use the phone to call next door and ask if there's space, and if so, you would have to wait a few minutes for them to prepare a table for you. Finally, he'll walk you around the corner and open the door, where you'll be greeted with a complimentary glass of sparkling wine.
@@ -71,6 +76,7 @@ export default ({ data }) => (
       data.booksAntiques1,
       data.booksAntiques2,
     ]} credit={{ text: "Books & Antiques", url: "https://www.facebook.com/Books-Antiques-172870279576969/" }} />
+    <ExternalLinks website="https://www.sonofapunch.com/fi/ravintolat/books-antiques/" facebook="https://www.facebook.com/Books-Antiques-172870279576969/" />
     <h4>Pastor</h4>
     <p>
       In Pastor, they make my favorite Whisky Sour variation, called “Sour Dog.” The place feels very high-end, but with style, and drink prices are roughly the same as in other good bars. They also serve fantastic food, but it is very pricey, so I wouldn't eat there unless I had a business dinner.
@@ -80,6 +86,7 @@ export default ({ data }) => (
       data.pastor2,
       data.pastor3,
     ]} credit={{ text: "Pastor", url: "https://www.facebook.com/pastorhelsinki/" }} />
+    <ExternalLinks website="http://www.pastorrestaurant.fi" facebook="https://www.facebook.com/pastorhelsinki/" instagram="https://www.instagram.com/pastorhelsinki/" />
     <h4>Liberty or Death</h4>
     <p>
       Great, speakeasy-inspired cocktail bar, with, surprisingly, hip-hop music playing in the background, which I really like. The place is small and gets full quick, so avoid Fridays and Saturdays.
@@ -88,6 +95,7 @@ export default ({ data }) => (
       data.libertyOrDeath1,
       data.libertyOrDeath2,
     ]} credit={{ text: "Liberty or Death", url: "https://www.facebook.com/libertyordeathbar/" }} />
+    <ExternalLinks website="https://www.sonofapunch.com/fi/ravintolat/liberty-or-death/" facebook="https://www.facebook.com/libertyordeathbar/" />
     <h4>Kaisla</h4>
     <p>
       Big beer bar, with a large variety of beers, and helpful staff.
@@ -95,6 +103,7 @@ export default ({ data }) => (
     <ImageGrid photos={[
       data.kaisla1,
     ]} credit={{ text: "Kaisla", url: "https://www.raflaamo.fi/en/helsinki/kaisla" }} />
+    <ExternalLinks website="https://www.raflaamo.fi/en/helsinki/kaisla" />
     <h2>Food:</h2>
     <p>
       There are so many excellent places to eat in Helsinki, that it would make for a very long blog post if I tried to cover it all. And I'd probably fail at that. So here are a few of my personal favorites.
@@ -110,6 +119,7 @@ export default ({ data }) => (
       data.blockDylan4,
       data.blockDylan5,
     ]} credit={{ text: "Block By Dylan", url: "https://www.dylan.fi/block/" }} />
+    <ExternalLinks website="https://www.dylan.fi/block/" facebook="https://www.facebook.com/blockhelsinki/" instagram="https://www.instagram.com/blockbydylan/" />
     <h4>Momotoko</h4>
     <p>
       Fantastic ramen place in the heart of the city. This is the restaurant that made me fall in love with ramen.
@@ -121,6 +131,7 @@ export default ({ data }) => (
       data.momotoko4,
       data.momotoko5,
     ]} credit={{ text: "Momotoko", url: "http://www.momotoko.com" }} />
+    <ExternalLinks website="http://www.momotoko.com" facebook="https://www.facebook.com/Momotoko-1178106338995766/" />
     <h4>Samrat</h4>
     <p>
       Samrat is a cozy and neat restaurant, with most delicious Indian food, and it won't leave your clothes smelling like curry for the rest of the day. Curry dishes and naan bread to die for.
@@ -128,6 +139,7 @@ export default ({ data }) => (
     <ImageGrid photos={[
       data.samrat1,
     ]} credit={{ text: "TripAdvisor — Kati M", url: "https://www.tripadvisor.com/members/156katim" }} />
+    <ExternalLinks website="http://www.samrat.fi" />
     <h4>Skiffer</h4>
     <p>
       Very creative and tasty pizzas, in a rustic, sailor-themed restaurant. Ice cream or strawberries on a pizza? You have to try!
@@ -142,6 +154,7 @@ export default ({ data }) => (
       data.skiffer4,
       data.skiffer5,
     ]} credit={{ text: "Skiffer", url: "https://www.facebook.com/skifferrestaurant/" }} />
+    <ExternalLinks website="http://www.skiffer.fi" facebook="https://www.facebook.com/skifferrestaurant/" instagram="https://www.instagram.com/skifferrestaurant/" />
     <h4>Baskeri & Basso</h4>
     <p>
       I've only been to Baskeri & Basso once, but it left an unforgettable impression on me. We had a romantic dinner in this beautiful candle-light lit place, with lots of great wine and food, and nice conversations with the staff and the owner of the restaurant. They even gave us a home-baked baguette to go, on the house.
@@ -156,6 +169,7 @@ export default ({ data }) => (
       data.basbas4,
       data.basbas5,
     ]} credit={{ text: "Baskeri & Basso", url: "http://basbas.fi/bistro/" }} />
+    <ExternalLinks website="http://basbas.fi/bistro/" facebook="https://www.facebook.com/BasBasOfficial/" instagram="https://www.instagram.com/basbasofficial/" />
     <h4>Holiday</h4>
     <p>
       I've had the most amazing veef (veggie beef substitute) dish ever in Holiday. Plenty of outdoor seating, perfect for nice summer evenings, on a beautiful Katajanokka island.
@@ -167,6 +181,7 @@ export default ({ data }) => (
       data.holiday4,
       data.holiday5,
     ]} credit={{ text: "Holiday", url: "https://www.facebook.com/HolidayBarHelsinki/" }} />
+    <ExternalLinks website="http://holiday-bar.fi" facebook="https://www.facebook.com/HolidayBarHelsinki/" instagram="https://www.instagram.com/holidaybarhelsinki/" />
     <br />
     <br />
   </div>

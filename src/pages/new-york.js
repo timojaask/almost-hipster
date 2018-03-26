@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import PostHeader from "../components/PostHeader";
 import { FootnoteLink, FootnoteList } from "../components/Footnotes"
 import { ImageGrid } from "../components/ImageGrid"
+import { ExternalLinks } from "../components/ExternalLinks"
 import styles from "./blogpost.module.css";
 
 export default ({ data }) => (
@@ -28,6 +29,7 @@ export default ({ data }) => (
       data.blackFox4,
       data.blackFox5,
     ]} credit={{ text: "Black Fox Coffee", url: "https://www.facebook.com/blackfoxcoffeeco/" }} />
+    <ExternalLinks website="https://www.blackfoxcoffee.com" facebook="https://www.facebook.com/blackfoxcoffeeco/" instagram="https://www.instagram.com/blackfoxcoffeeco/" />
     <h4>Bluestone Lane</h4>
     <p>
       Australian-inspired coffee shops, which produce whatever you would expect from a decent specialty coffee store.
@@ -37,6 +39,7 @@ export default ({ data }) => (
       data.bluestoneLane2,
       data.bluestoneLane3,
     ]} credit={{ text: "Bluestone Lane", url: "https://www.facebook.com/BluestoneLane/" }} />
+    <ExternalLinks website="https://bluestonelane.com" facebook="https://www.facebook.com/BluestoneLane" instagram="https://www.instagram.com/Bluestonelanecoffee/" />
     <h4>Birch Coffee</h4>
     <p>
       Got great coffee in various Birch locations 95% of the time, which is good enough, since they have one in almost every part of Manhattan.
@@ -44,6 +47,7 @@ export default ({ data }) => (
     <ImageGrid photos={[
       data.birch1,
     ]} credit={{ text: "Birch Coffee", url: "https://www.facebook.com/birchcoffee/" }} />
+    <ExternalLinks website="http://birchcoffee.com" facebook="https://www.facebook.com/birchcoffee/" instagram="https://www.instagram.com/birchcoffee/" />
     <h4>Stumptown</h4>
     <p>
       I’ve mostly come to Stumptown to buy some of their roasted beans, which are fantastic if you prepare coffee at home. However, they also make delicious coffee in the shop.
@@ -53,6 +57,7 @@ export default ({ data }) => (
       data.stumptown2,
       data.stumptown3,
     ]} credit={{ text: "Stumptown", url: "https://www.facebook.com/stumptowncoffee/" }} />
+    <ExternalLinks website="https://www.stumptowncoffee.com" facebook="https://www.facebook.com/stumptowncoffee/" instagram="https://www.instagram.com/stumptowncoffee/" />
     <h2>Bars</h2>
     <h4>The Underdog</h4>
     <p>
@@ -63,10 +68,12 @@ export default ({ data }) => (
       data.underdog2,
       data.underdog3,
     ]} credit={{ text: "The Underdog", url: "https://www.facebook.com/UnderdogBarNYC/" }} />
+    <ExternalLinks website="http://www.thegrowlernyc.com/underdog.cfm" facebook="https://www.facebook.com/UnderdogBarNYC/" instagram="https://www.instagram.com/underdog_nyc/" />
     <h4>Little Branch</h4>
     <p>
       The same concept as The Underdog, however, vastly more known, so finding the entrance won't be a problem, as there's likely a line stretching around the block. Well worth the wait though, if you're into cocktails.
     </p>
+    <ExternalLinks facebook="https://www.facebook.com/Little-Branch-41435210381/" />
     <h4>Rue B</h4>
     <p>
       An awesome small jazz bar in the Alphabet City. Great mood, drinks, and (often live) music.
@@ -76,6 +83,7 @@ export default ({ data }) => (
       data.rueB2,
       data.rueB3,
     ]} credit={{ text: "Rue B", url: "https://www.facebook.com/RueBeastvillage/" }} />
+    <ExternalLinks website="http://rueb-nyc.com" facebook="https://www.facebook.com/RueBeastvillage/" instagram="http://instagram.com/rueb_nyc" />
     <h2>Food</h2>
     <h4>Roki Le Izakaya</h4>
     <p>
@@ -85,6 +93,7 @@ export default ({ data }) => (
       data.roki1,
       data.roki2,
     ]} credit={{ text: "Roki Le Izakaya", url: "https://www.facebook.com/ModernJapaneseRestaurant/" }} />
+    <ExternalLinks website="https://www.rokileizakaya.com" facebook="https://www.facebook.com/ModernJapaneseRestaurant/" instagram="https://www.instagram.com/roki_le_izakaya/" />
     <h4>Mighty Quinn’s BBQ</h4>
     <p>
       It's a low-end fast-food place, but I’ve never had a better brisket in my life — it's so soft, it’s falling apart, with black burned edges around that taste delicious. And it's good for your wallet!
@@ -95,6 +104,7 @@ export default ({ data }) => (
       data.quinns3,
       data.quinns4,
     ]} credit={{ text: "Mighty Quinn’s BBQ", url: "https://www.facebook.com/mightyquinnsbbq/" }} />
+    <ExternalLinks website="http://www.mightyquinnsbbq.com" facebook="https://www.facebook.com/mightyquinnsbbq/" instagram="https://www.instagram.com/mightyquinnsbbq/" />
     <h4>Industry Kitchen</h4>
     <p>
       Great food with views on East Rover and The Brooklyn Bridge, where, among other things, they are serving the biggest steak ever. They sell it for two, but it’s enough for three. Or maybe four. And something called Floating Island Garlic bread. It is superb.
@@ -106,6 +116,7 @@ export default ({ data }) => (
       data.industry4,
       data.industry5,
     ]} credit={{ text: "Industry Kitchen", url: "https://www.facebook.com/industrykitchennyc/" }} />
+    <ExternalLinks website="http://industry-kitchen.com" facebook="https://www.facebook.com/industrykitchennyc/" instagram="https://www.instagram.com/industrykitchen/" />
     <h4>Food Gallery 32</h4>
     <p>
       A three stories food court in the middle of the Korea Town. It has a wide variety of fantastic Korean dishes for lower prices.
@@ -115,6 +126,7 @@ export default ({ data }) => (
       data.foodGallery2,
       data.foodGallery3,
     ]} credit={{ text: "Food Gallery 32", url: "https://www.facebook.com/foodgallery32/" }} />
+    <ExternalLinks website="http://foodgallery32nyc.com" facebook="https://www.facebook.com/foodgallery32/" instagram="https://www.instagram.com/foodgallery32.ktownnyc/" />
     <h4>YO! Sushi</h4>
     <p>
       Conveyor belt sushi rocks! Sit and watch the delicious pieces of Japanese cuisine passing you by. Then grab and eat whatever looks best to you!
@@ -125,6 +137,7 @@ export default ({ data }) => (
       data.yoSushi3,
       data.yoSushi4,
     ]} credit={{ text: "YO! Sushi", url: "https://www.facebook.com/YOSushiAmerica/" }} />
+    <ExternalLinks website="https://yosushiusa.com" facebook="https://www.facebook.com/YOSushiAmerica/" instagram="https://www.instagram.com/yosushiusa/" />
     <h2>Other</h2>
     <h4>Morgenstern's Finest Ice Cream</h4>
     <p>
@@ -138,6 +151,7 @@ export default ({ data }) => (
       data.morgensterns2,
       data.morgensterns3,
     ]} credit={{ text: "Morgenstern's Finest Ice Cream", url: "https://www.facebook.com/morgensternsnyc/" }} />
+    <ExternalLinks website="http://www.morgensternsnyc.com" facebook="https://www.facebook.com/morgensternsnyc/" instagram="https://www.instagram.com/morgensternsnyc/" />
     <h4>Arcade Bakery</h4>
     <p>
       Continuing the list of “best in the world,” next up - Arcade Bakery. Hidden away from the streets, in a hallway of what looks like an office building, is this tiny bakery corner. They are serving only maybe eight different types of sweet baked goods, but my goodness they are good. The almond croissants have never tasted this delicious.
@@ -148,6 +162,7 @@ export default ({ data }) => (
     <ImageGrid photos={[
       data.arcadeBakery1,
     ]} credit={{ text: "Condé Nast", url: "https://www.cntraveler.com/restaurants/new-york/arcade-bakery" }} />
+    <ExternalLinks website="http://www.arcadebakery.com" instagram="https://www.instagram.com/arcadebakery/" />
     <h4>SPiN</h4>
     <p>
       Drinks and ping pong. Try it, it's great.
@@ -157,6 +172,7 @@ export default ({ data }) => (
       data.spin2,
       data.spin3,
     ]} credit={{ text: "SPiN", url: "https://www.facebook.com/SPiNNewYork/" }} />
+    <ExternalLinks website="https://newyork.wearespin.com" facebook="https://www.facebook.com/SPiNNewYork/" instagram="https://www.instagram.com/wearespin/" />
     <br />
     <br />
     <ImageGrid photos={[
