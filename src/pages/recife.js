@@ -30,9 +30,21 @@ export default ({ data }) => (
     <p>
       My favorite drink — flat white — is mostly not known here, but asking for a cappuccino with more coffee and less milk, “cappuccino com mais cafe e menos leite,” works decently in the specialty coffee places.
     </p>
+    <h4>Clandestino Café</h4>
+    <p>
+      I was so happy and sad to discover Clandestino Café on nearly my last week in Recife! Get this — it's a specialty coffee shop built inside a functioning old-school ex-military bus. No kidding. It is very cozy, with creative decor inside. The owners, Mateus and Sara are passionate about teaching people about specialty coffee, they speak fluent English, and we've had a great conversation. They happily served me a flat white, which was a first for me in Recife, and it was everything I wanted it to be. Photos don't do it justice, so come and experience this little nice coffee shop with your own senses!
+    </p>
+    <ImageGrid photos={[
+      { image: data.clandestino1, alt: "Clandestino Café — specialty coffee shop in Recife" },
+      { image: data.clandestino2, alt: "Clandestino Café — specialty coffee shop in Recife" },
+      { image: data.clandestino3, alt: "Clandestino Café — specialty coffee shop in Recife" },
+      { image: data.clandestino4, alt: "Clandestino Café — specialty coffee shop in Recife" },
+      { image: data.clandestino5, alt: "Clandestino Café — specialty coffee shop in Recife" },
+    ]} />
+    <ExternalLinks facebook="https://www.facebook.com/clandestino364/" instagram="https://www.instagram.com/clandestinocafe/" />
     <h4>Borsoi</h4>
     <p>
-      Borsoi turned out to be my go-to place for a daily dose of coffee. They have two locations: one in Boa Viagem and one in Pina. Both are equally cozy, and the staff is always happy and seem to enjoy their job. Baristas are devoted to the art of making coffee, participate in competitions, and they can spend hours talking about it. Makes me wish I spoke better Portuguese!
+      Borsoi turned out to be my go-to place for a daily dose of coffee. They have two locations: one in Boa Viagem and one in Pina. Both are equally nice, and the staff is always happy and seem to enjoy their job. Baristas are devoted to the art of making coffee, participate in competitions, and they can spend hours talking about it. Makes me wish I spoke better Portuguese, since not speaking it definitely creates a barrier.
     </p>
     <p>
       Both locations have excellent options for killing small hunger, such as sandwiches and local specialties. On weekdays in Pina location, they serve lunch of the day for R$25, which I've had a couple of times and it was delightful.
@@ -50,24 +62,12 @@ export default ({ data }) => (
     <ExternalLinks facebook="https://www.facebook.com/borsoicafeclube/" instagram="https://www.instagram.com/borsoicafeclube/" />
     <h4>Kaffe</h4>
     <p>
-      Kaffe Torrefação e Treinamento is a coffee roasting and barista training shop, but they also serve coffee. What I like about this place is that you often can choose one of the two available bean varieties for your drink. Just like Borsoi, this is a very cozy place with friendly and skilled staff.
+      Kaffe Torrefação e Treinamento is a coffee roasting and barista training shop, but they also serve coffee. What I like about this place is that you often can choose one of the two available bean varieties for your drink. It is a very cozy place with friendly and skilled staff. More intimate and quiet than Borsoi, which in my opinion is a good thing. Seeing them roast the coffee in the same room with you is also a big plus in my books.
     </p>
     <ImageGrid photos={[
       { image: data.kaffe1, alt: "Kaffe — specialty coffee shop in Recife" },
     ]} />
     <ExternalLinks website="https://www.sympla.com.br/kaffett" facebook="https://www.facebook.com/kaffett/" instagram="https://www.instagram.com/kaffe.tt/" />
-    <h4>Clandestino Café</h4>
-    <p>
-      I was so happy and sad to discover Clandestino Café on my last week in Recife! Get this — it's a specialty coffee shop built inside a functioning old-school ex-military bus. No kidding. It is very cozy, with creative decor inside (the photos do not do it justice). The owners, Mateus and Sara are passionate about teaching people about specialty coffee, they speak fluent English, and we've had a great conversation. They happily served me a flat white, which was a first for me in Recife, and it was everything I wanted it to be.
-    </p>
-    <ImageGrid photos={[
-      { image: data.clandestino1, alt: "Clandestino Café — specialty coffee shop in Recife" },
-      { image: data.clandestino2, alt: "Clandestino Café — specialty coffee shop in Recife" },
-      { image: data.clandestino3, alt: "Clandestino Café — specialty coffee shop in Recife" },
-      { image: data.clandestino4, alt: "Clandestino Café — specialty coffee shop in Recife" },
-      { image: data.clandestino5, alt: "Clandestino Café — specialty coffee shop in Recife" },
-    ]} />
-    <ExternalLinks facebook="https://www.facebook.com/clandestino364/" instagram="https://www.instagram.com/clandestinocafe/" />
     <h2>Bars</h2>
     <h4>Pina Cocktails & Co</h4>
     <p>
