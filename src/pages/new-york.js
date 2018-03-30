@@ -12,7 +12,7 @@ export default ({ data }) => (
     <Helmet>
       <title>New York's best cafes, bars, and restaurants</title>
     </Helmet>
-    <PostHeader coverImage={data.cover} name="New York" date={"Aug 2017"} />
+    <PostHeader coverImage={data.cover} name="New York" date={"Aug 2017"} alt="New York's best cafes, bars, and restaurants" />
     <div className={styles.headerSpacer}>&nbsp;</div>
     <p>
       New York is a very different city from the other cities that I've reviewed. It has so many great places that it's simply impossible to visit them all. So here are a few of my favorite picks, the ones that consistently delivered great experience. I lived and spent most of my time between Downtown and Midtown Manhattan, so this list is focused on that area.
@@ -23,11 +23,11 @@ export default ({ data }) => (
       Black Fox is my favorite coffee shop in New York City, and is the only one on this list that's not a chain. The staff is very professional and make fantastic coffee drinks as well as tea.
     </p>
     <ImageGrid photos={[
-      data.blackFox1,
-      data.blackFox2,
-      data.blackFox3,
-      data.blackFox4,
-      data.blackFox5,
+      { image: data.blackFox1, alt: "Black Fox Coffee — specialty coffee shop in New York" },
+      { image: data.blackFox2, alt: "Black Fox Coffee — specialty coffee shop in New York" },
+      { image: data.blackFox3, alt: "Black Fox Coffee — specialty coffee shop in New York" },
+      { image: data.blackFox4, alt: "Black Fox Coffee — specialty coffee shop in New York" },
+      { image: data.blackFox5, alt: "Black Fox Coffee — specialty coffee shop in New York" },
     ]} credit={{ text: "Black Fox Coffee", url: "https://www.facebook.com/blackfoxcoffeeco/" }} />
     <ExternalLinks website="https://www.blackfoxcoffee.com" facebook="https://www.facebook.com/blackfoxcoffeeco/" instagram="https://www.instagram.com/blackfoxcoffeeco/" />
     <h4>Bluestone Lane</h4>
@@ -35,9 +35,9 @@ export default ({ data }) => (
       Australian-inspired coffee shops, which produce whatever you would expect from a decent specialty coffee store.
     </p>
     <ImageGrid photos={[
-      data.bluestoneLane1,
-      data.bluestoneLane2,
-      data.bluestoneLane3,
+      { image: data.bluestoneLane1, alt: "Bluestone Lane — specialty coffee shop in New York" },
+      { image: data.bluestoneLane2, alt: "Bluestone Lane — specialty coffee shop in New York" },
+      { image: data.bluestoneLane3, alt: "Bluestone Lane — specialty coffee shop in New York" },
     ]} credit={{ text: "Bluestone Lane", url: "https://www.facebook.com/BluestoneLane/" }} />
     <ExternalLinks website="https://bluestonelane.com" facebook="https://www.facebook.com/BluestoneLane" instagram="https://www.instagram.com/Bluestonelanecoffee/" />
     <h4>Birch Coffee</h4>
@@ -45,7 +45,7 @@ export default ({ data }) => (
       Got great coffee in various Birch locations 95% of the time, which is good enough, since they have one in almost every part of Manhattan.
     </p>
     <ImageGrid photos={[
-      data.birch1,
+      { image: data.birch1, alt: "Birch Coffee — specialty coffee shop in New York" },
     ]} credit={{ text: "Birch Coffee", url: "https://www.facebook.com/birchcoffee/" }} />
     <ExternalLinks website="http://birchcoffee.com" facebook="https://www.facebook.com/birchcoffee/" instagram="https://www.instagram.com/birchcoffee/" />
     <h4>Stumptown</h4>
@@ -53,9 +53,9 @@ export default ({ data }) => (
       I’ve mostly come to Stumptown to buy some of their roasted beans, which are fantastic if you prepare coffee at home. However, they also make delicious coffee in the shop.
     </p>
     <ImageGrid photos={[
-      data.stumptown1,
-      data.stumptown2,
-      data.stumptown3,
+      { image: data.stumptown1, alt: "Stumptown — specialty coffee shop in New York" },
+      { image: data.stumptown2, alt: "Stumptown — specialty coffee shop in New York" },
+      { image: data.stumptown3, alt: "Stumptown — specialty coffee shop in New York" },
     ]} credit={{ text: "Stumptown", url: "https://www.facebook.com/stumptowncoffee/" }} />
     <ExternalLinks website="https://www.stumptowncoffee.com" facebook="https://www.facebook.com/stumptowncoffee/" instagram="https://www.instagram.com/stumptowncoffee/" />
     <h2>Bars</h2>
@@ -64,9 +64,9 @@ export default ({ data }) => (
       Small and intimate speakeasy, with dimmed lights and bartender playing vinyl. Seating maybe for 15 people maximum, but it is rarely full, which is a good thing. Find the entrance door on the underground floor of The Growler, next to the toilets...
     </p>
     <ImageGrid photos={[
-      data.underdog1,
-      data.underdog2,
-      data.underdog3,
+      { image: data.underdog1, alt: "The Underdog — speakeasy bar in New York" },
+      { image: data.underdog2, alt: "The Underdog — speakeasy bar in New York" },
+      { image: data.underdog3, alt: "The Underdog — speakeasy bar in New York" },
     ]} credit={{ text: "The Underdog", url: "https://www.facebook.com/UnderdogBarNYC/" }} />
     <ExternalLinks website="http://www.thegrowlernyc.com/underdog.cfm" facebook="https://www.facebook.com/UnderdogBarNYC/" instagram="https://www.instagram.com/underdog_nyc/" />
     <h4>Little Branch</h4>
@@ -79,9 +79,9 @@ export default ({ data }) => (
       An awesome small jazz bar in the Alphabet City. Great mood, drinks, and (often live) music.
     </p>
     <ImageGrid photos={[
-      data.rueB1,
-      data.rueB2,
-      data.rueB3,
+      { image: data.rueB1, alt: "Rue B — cool jazz bar in New York" },
+      { image: data.rueB2, alt: "Rue B — cool jazz bar in New York" },
+      { image: data.rueB3, alt: "Rue B — cool jazz bar in New York" },
     ]} credit={{ text: "Rue B", url: "https://www.facebook.com/RueBeastvillage/" }} />
     <ExternalLinks website="http://rueb-nyc.com" facebook="https://www.facebook.com/RueBeastvillage/" instagram="http://instagram.com/rueb_nyc" />
     <h2>Food</h2>
@@ -90,8 +90,8 @@ export default ({ data }) => (
       Fantastic Japanese restaurant, with most pleasant staff and atmosphere. And the food is incredible, and not spoiled by price. Tonkotsu ramen and Pork belly buns are heavenly.
     </p>
     <ImageGrid photos={[
-      data.roki1,
-      data.roki2,
+      { image: data.roki1, alt: "Roki Le Izakaya — modern japanese restaurant in New York" },
+      { image: data.roki2, alt: "Roki Le Izakaya — modern japanese restaurant in New York" },
     ]} credit={{ text: "Roki Le Izakaya", url: "https://www.facebook.com/ModernJapaneseRestaurant/" }} />
     <ExternalLinks website="https://www.rokileizakaya.com" facebook="https://www.facebook.com/ModernJapaneseRestaurant/" instagram="https://www.instagram.com/roki_le_izakaya/" />
     <h4>Mighty Quinn’s BBQ</h4>
@@ -99,10 +99,10 @@ export default ({ data }) => (
       It's a low-end fast-food place, but I’ve never had a better brisket in my life — it's so soft, it’s falling apart, with black burned edges around that taste delicious. And it's good for your wallet!
     </p>
     <ImageGrid photos={[
-      data.quinns1,
-      data.quinns2,
-      data.quinns3,
-      data.quinns4,
+      { image: data.quinns1, alt: "Mighty Quinn’s BBQ — grilled meat restaurant in New York" },
+      { image: data.quinns2, alt: "Mighty Quinn’s BBQ — grilled meat restaurant in New York" },
+      { image: data.quinns3, alt: "Mighty Quinn’s BBQ — grilled meat restaurant in New York" },
+      { image: data.quinns4, alt: "Mighty Quinn’s BBQ — grilled meat restaurant in New York" },
     ]} credit={{ text: "Mighty Quinn’s BBQ", url: "https://www.facebook.com/mightyquinnsbbq/" }} />
     <ExternalLinks website="http://www.mightyquinnsbbq.com" facebook="https://www.facebook.com/mightyquinnsbbq/" instagram="https://www.instagram.com/mightyquinnsbbq/" />
     <h4>Industry Kitchen</h4>
@@ -110,11 +110,11 @@ export default ({ data }) => (
       Great food with views on East Rover and The Brooklyn Bridge, where, among other things, they are serving the biggest steak ever. They sell it for two, but it’s enough for three. Or maybe four. And something called Floating Island Garlic bread. It is superb.
     </p>
     <ImageGrid photos={[
-      data.industry1,
-      data.industry2,
-      data.industry3,
-      data.industry4,
-      data.industry5,
+      { image: data.industry1, alt: "Industry Kitchen — restaurant with great views in New York" },
+      { image: data.industry2, alt: "Industry Kitchen — restaurant with great views in New York" },
+      { image: data.industry3, alt: "Industry Kitchen — restaurant with great views in New York" },
+      { image: data.industry4, alt: "Industry Kitchen — restaurant with great views in New York" },
+      { image: data.industry5, alt: "Industry Kitchen — restaurant with great views in New York" },
     ]} credit={{ text: "Industry Kitchen", url: "https://www.facebook.com/industrykitchennyc/" }} />
     <ExternalLinks website="http://industry-kitchen.com" facebook="https://www.facebook.com/industrykitchennyc/" instagram="https://www.instagram.com/industrykitchen/" />
     <h4>Food Gallery 32</h4>
@@ -122,9 +122,9 @@ export default ({ data }) => (
       A three stories food court in the middle of the Korea Town. It has a wide variety of fantastic Korean dishes for lower prices.
     </p>
     <ImageGrid photos={[
-      data.foodGallery1,
-      data.foodGallery2,
-      data.foodGallery3,
+      { image: data.foodGallery1, alt: "Food Gallery 32 — Korean restaurants in New York" },
+      { image: data.foodGallery2, alt: "Food Gallery 32 — Korean restaurants in New York" },
+      { image: data.foodGallery3, alt: "Food Gallery 32 — Korean restaurants in New York" },
     ]} credit={{ text: "Food Gallery 32", url: "https://www.facebook.com/foodgallery32/" }} />
     <ExternalLinks website="http://foodgallery32nyc.com" facebook="https://www.facebook.com/foodgallery32/" instagram="https://www.instagram.com/foodgallery32.ktownnyc/" />
     <h4>YO! Sushi</h4>
@@ -132,10 +132,10 @@ export default ({ data }) => (
       Conveyor belt sushi rocks! Sit and watch the delicious pieces of Japanese cuisine passing you by. Then grab and eat whatever looks best to you!
     </p>
     <ImageGrid photos={[
-      data.yoSushi1,
-      data.yoSushi2,
-      data.yoSushi3,
-      data.yoSushi4,
+      { image: data.yoSushi1, alt: "YO! Sushi — conveyor belt sushi restaurants in New York" },
+      { image: data.yoSushi2, alt: "YO! Sushi — conveyor belt sushi restaurants in New York" },
+      { image: data.yoSushi3, alt: "YO! Sushi — conveyor belt sushi restaurants in New York" },
+      { image: data.yoSushi4, alt: "YO! Sushi — conveyor belt sushi restaurants in New York" },
     ]} credit={{ text: "YO! Sushi", url: "https://www.facebook.com/YOSushiAmerica/" }} />
     <ExternalLinks website="https://yosushiusa.com" facebook="https://www.facebook.com/YOSushiAmerica/" instagram="https://www.instagram.com/yosushiusa/" />
     <h2>Other</h2>
@@ -147,9 +147,9 @@ export default ({ data }) => (
       Best also means popular, so at times you see a huge line, and you might think Justin Biber is playing in a bar next door, when to your horror you realize it's leading to Morgenstern's. But then, someone from the line turns to you and says “Don't worry, it's worth the wait, buddy.”
     </p>
     <ImageGrid photos={[
-      data.morgensterns1,
-      data.morgensterns2,
-      data.morgensterns3,
+      { image: data.morgensterns1, alt: "Morgenstern's Finest Ice Cream — best ice cream shop in New York" },
+      { image: data.morgensterns2, alt: "Morgenstern's Finest Ice Cream — best ice cream shop in New York" },
+      { image: data.morgensterns3, alt: "Morgenstern's Finest Ice Cream — best ice cream shop in New York" },
     ]} credit={{ text: "Morgenstern's Finest Ice Cream", url: "https://www.facebook.com/morgensternsnyc/" }} />
     <ExternalLinks website="http://www.morgensternsnyc.com" facebook="https://www.facebook.com/morgensternsnyc/" instagram="https://www.instagram.com/morgensternsnyc/" />
     <h4>Arcade Bakery</h4>
@@ -160,7 +160,7 @@ export default ({ data }) => (
       Just like with Morgenstern's, Arcade has a problem of running out of supplies, so better show up early.
     </p>
     <ImageGrid photos={[
-      data.arcadeBakery1,
+      { image: data.arcadeBakery1, alt: "Arcade Bakery — best bakery in New York" },
     ]} credit={{ text: "Condé Nast", url: "https://www.cntraveler.com/restaurants/new-york/arcade-bakery" }} />
     <ExternalLinks website="http://www.arcadebakery.com" instagram="https://www.instagram.com/arcadebakery/" />
     <h4>SPiN</h4>
@@ -168,15 +168,15 @@ export default ({ data }) => (
       Drinks and ping pong. Try it, it's great.
     </p>
     <ImageGrid photos={[
-      data.spin1,
-      data.spin2,
-      data.spin3,
+      { image: data.spin1, alt: "SPiN — ping pong and drinks bar in New York" },
+      { image: data.spin2, alt: "SPiN — ping pong and drinks bar in New York" },
+      { image: data.spin3, alt: "SPiN — ping pong and drinks bar in New York" },
     ]} credit={{ text: "SPiN", url: "https://www.facebook.com/SPiNNewYork/" }} />
     <ExternalLinks website="https://newyork.wearespin.com" facebook="https://www.facebook.com/SPiNNewYork/" instagram="https://www.instagram.com/wearespin/" />
     <br />
     <br />
     <ImageGrid photos={[
-      data.newYork1,
+      { image: data.newYork1, alt: "Amazing New York city from above" },
     ]} credit={{ text: "Industry Kitchen", url: "https://www.facebook.com/industrykitchennyc/" }} />
   </div>
 );

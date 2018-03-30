@@ -12,7 +12,7 @@ export default ({ data }) => (
     <Helmet>
       <title>Recife's best cafes, bars, and restaurants</title>
     </Helmet>
-    <PostHeader coverImage={data.cover} name="Recife" date={"Mar 2018"} />
+    <PostHeader coverImage={data.cover} name="Recife" date={"Mar 2018"} alt="Recife's best cafes, bars, and restaurants" />
     <div className={styles.headerSpacer}>&nbsp;</div>
     <p>
       I feel like I left a lot of Recife unexplored, but there a few places I can write home about. Most of the places in this post are from around Boa Viagem area since that's the neighborhood where I've stayed.
@@ -41,11 +41,11 @@ export default ({ data }) => (
       One day we wanted to go for a coffee, and suddenly the power went off. Apparently, there was no electricity in 13 states of Brazil. We still decided to take a walk by the beach, because there was nothing to do at home anyway. We arrived at Borsoi and barista tells us that the espresso machine doesn't work, but he can make us some coffee. We asked if he can do it with milk, to which he said no, but he then changed his mind. He warmed up some milk on a gas stove, added some hot water, and stretched it by hand using a small French press. He then mixed it with some hand-ground, pour over coffee, and the result was so good it blew my mind. They also insisted that we don't pay for it (although, I just couldn't not tip).
     </p>
     <ImageGrid photos={[
-      data.borsoi1,
-      data.borsoi2,
-      data.borsoi3,
-      data.borsoi4,
-      data.borsoi5,
+      { image: data.borsoi1, alt: "Borsoi — specialty coffee shop in Recife" },
+      { image: data.borsoi2, alt: "Borsoi — specialty coffee shop in Recife" },
+      { image: data.borsoi3, alt: "Borsoi — specialty coffee shop in Recife" },
+      { image: data.borsoi4, alt: "Borsoi — specialty coffee shop in Recife" },
+      { image: data.borsoi5, alt: "Borsoi — specialty coffee shop in Recife" },
     ]} />
     <ExternalLinks facebook="https://www.facebook.com/borsoicafeclube/" instagram="https://www.instagram.com/borsoicafeclube/" />
     <h4>Kaffe</h4>
@@ -53,7 +53,7 @@ export default ({ data }) => (
       Kaffe Torrefação e Treinamento is a coffee roasting and barista training shop, but they also serve coffee. What I like about this place is that you often can choose one of the two available bean varieties for your drink. Just like Borsoi, this is a very cozy place with friendly and skilled staff.
     </p>
     <ImageGrid photos={[
-      data.kaffe1,
+      { image: data.kaffe1, alt: "Kaffe — specialty coffee shop in Recife" },
     ]} />
     <ExternalLinks website="https://www.sympla.com.br/kaffett" facebook="https://www.facebook.com/kaffett/" instagram="https://www.instagram.com/kaffe.tt/" />
     <h2>Bars</h2>
@@ -65,11 +65,11 @@ export default ({ data }) => (
       They only take in 20 people per night, and you cannot come without a reservation. Reservations are made via WhatsApp. Roughly 30 minutes before the opening time you will receive a message with a password that you must tell to the bouncer upon arrival.
     </p>
     <ImageGrid photos={[
-      data.pinaco1,
-      data.pinaco2,
-      data.pinaco3,
-      data.pinaco4,
-      data.pinaco5,
+      { image: data.pinaco1, alt: "Pina Cocktails & Co — speakeasy bar in Recife" },
+      { image: data.pinaco2, alt: "Pina Cocktails & Co — speakeasy bar in Recife" },
+      { image: data.pinaco3, alt: "Pina Cocktails & Co — speakeasy bar in Recife" },
+      { image: data.pinaco4, alt: "Pina Cocktails & Co — speakeasy bar in Recife" },
+      { image: data.pinaco5, alt: "Pina Cocktails & Co — speakeasy bar in Recife" },
     ]} />
     <ExternalLinks website="https://www.pinacocktails.com" facebook="https://www.facebook.com/pinacocktails/" instagram="https://www.instagram.com/pinacocktails/" />
     <h4>Mr. Hoppy</h4>
@@ -77,7 +77,7 @@ export default ({ data }) => (
       A lively outdoor bar, serving only a small selection of on-tap craft beers (with around ten taps open on a typical night) and burgers. Great atmosphere and great beers. Sometimes they even have live music, but then it gets pretty crowded.
     </p>
     <ImageGrid photos={[
-      data.mrhoppy1,
+      { image: data.mrhoppy1, alt: "Mr. Hoppy — cool beer and burger bar in Recife" },
     ]} />
     <ExternalLinks website="http://mrhoppy.negocio.site" facebook="https://www.facebook.com/MrHoppyBoaViagem/" instagram="https://www.instagram.com/mrhoppyboaviagem/" />
     <h4>Be Hookah</h4>
@@ -97,9 +97,9 @@ export default ({ data }) => (
       Bercy is a proper crepe restaurant, with a wide variety of savory and sweet crepes. Some dishes are irresistibly tasty.
     </p>
     <ImageGrid photos={[
-      data.bercy1,
-      data.bercy2,
-      data.bercy3,
+      { image: data.bercy1, alt: "Bercy — crepe restaurant in Recife" },
+      { image: data.bercy2, alt: "Bercy — crepe restaurant in Recife" },
+      { image: data.bercy3, alt: "Bercy — crepe restaurant in Recife" },
     ]} credit={{ text: "Bercy", url: "https://www.facebook.com/bercycrepesesaladas/" }} />
     <ExternalLinks website="http://www.bercyvillage.com.br" facebook="https://www.facebook.com/bercycrepesesaladas/" instagram="https://www.instagram.com/bercy_village/" />
     <h4>Udon</h4>
@@ -107,9 +107,9 @@ export default ({ data }) => (
       Fixed price sushi buffet. Pick whatever you want from a wide variety of sushi, sashimi, and other Japanese dishes. There are several sushi buffet restaurants in Recife, but Udon is, in my opinion, the nicest.
     </p>
     <ImageGrid photos={[
-      data.udon1,
-      data.udon2,
-      data.udon3,
+      { image: data.udon1, alt: "Udon — sushi buffet restaurant in Recife" },
+      { image: data.udon2, alt: "Udon — sushi buffet restaurant in Recife" },
+      { image: data.udon3, alt: "Udon — sushi buffet restaurant in Recife" },
     ]} credit={{ text: "Udon", url: "https://www.facebook.com/UdonCozinhaOriental/" }} />
     <ExternalLinks website="https://udon.com.br" facebook="https://www.facebook.com/UdonCozinhaOriental/" instagram="https://www.instagram.com/udoncozinhaoriental/" />
     <h2>Other</h2>
@@ -121,10 +121,10 @@ export default ({ data }) => (
       The place itself is very nice — clean and cozy, the staff is super friendly, and they have a foosball table! What else would one want?
     </p>
     <ImageGrid photos={[
-      data.acaiemporio1,
-      data.acaiemporio2,
-      data.acaiemporio3,
-      data.acaiemporio4,
+      { image: data.acaiemporio1, alt: "Acai Emporio — acai buffet place in Recife" },
+      { image: data.acaiemporio2, alt: "Acai Emporio — acai buffet place in Recife" },
+      { image: data.acaiemporio3, alt: "Acai Emporio — acai buffet place in Recife" },
+      { image: data.acaiemporio4, alt: "Acai Emporio — acai buffet place in Recife" },
     ]} />
     <ExternalLinks website="http://acaiemporio.com.br" facebook="https://www.facebook.com/acaiemporio/" instagram="https://www.instagram.com/acaiemporio/" />
     <FootnoteList footnotes={[
@@ -132,7 +132,7 @@ export default ({ data }) => (
       { index: "2", title: "Café expresso — Wikipedia", url: "https://pt.wikipedia.org/wiki/Café_expresso" },
     ]} />
     <ImageGrid photos={[
-      data.recife1,
+      { image: data.recife1, alt: "Beautiful Recife beach at sunset" },
     ]} />
   </div>
 );

@@ -12,7 +12,7 @@ export default ({ data }) => (
     <Helmet>
       <title>Helsinki's best cafes, bars, and restaurants</title>
     </Helmet>
-    <PostHeader coverImage={data.cover} name="Helsinki" date={"Oct 2016"} />
+    <PostHeader coverImage={data.cover} name="Helsinki" date={"Oct 2016"} alt="Helsinki's best cafes, bars, and restaurants" />
     <div className={styles.headerSpacer}>&nbsp;</div>
     <p>
       I spent roughly one year living in Helsinki, and it became one of my favorite cities in the world. It's beautiful, neat, surrounded by wonderful nature and a sea. It also has a lot of great bars and restaurants to check out.
@@ -26,9 +26,9 @@ export default ({ data }) => (
       Jani is the owner and one of the most devoted coffee makers I've had a pleasure to meet. He once told me, that for each drink that he makes, he wants it to be perfect. So he'll redo it as many times as necessary until he gets every detail just right before serving it to a customer. Devotion to the art speaks for itself once you get to taste his work. Artisan is my favorite.
     </p>
     <ImageGrid photos={[
-      data.artisan1,
-      data.artisan2,
-      data.artisan3,
+      { image: data.artisan1, alt: "Artisan Café — specialty coffee shop in Helsinki" },
+      { image: data.artisan2, alt: "Artisan Café — specialty coffee shop in Helsinki" },
+      { image: data.artisan3, alt: "Artisan Café — specialty coffee shop in Helsinki" },
     ]} credit={{ text: "Artisan Café", url: "https://www.artisancafe.fi" }} />
     <ExternalLinks website="https://www.artisancafe.fi" facebook="https://www.facebook.com/artisanhelsinki/" instagram="https://www.instagram.com/artisanhelsinki/" />
     <h4>Johan & Nyström</h4>
@@ -36,10 +36,10 @@ export default ({ data }) => (
       This super cozy coffee shop is located on a beautiful Katajanokka island. Random-looking, but at the same time very stylish decor and brick walls create a wonderfully relaxing atmosphere and a unique place.
     </p>
     <ImageGrid photos={[
-      data.johannystrom1,
-      data.johannystrom2,
-      data.johannystrom3,
-      data.johannystrom4,
+      { image: data.johannystrom1, alt: "Johan & Nyström — specialty coffee shop in Helsinki" },
+      { image: data.johannystrom2, alt: "Johan & Nyström — specialty coffee shop in Helsinki" },
+      { image: data.johannystrom3, alt: "Johan & Nyström — specialty coffee shop in Helsinki" },
+      { image: data.johannystrom4, alt: "Johan & Nyström — specialty coffee shop in Helsinki" },
     ]} credit={{ text: "Johan & Nyström", url: "https://www.facebook.com/johanochnystrom.fi/" }} />
     <ExternalLinks website="https://johanochnystrom.fi" facebook="https://www.facebook.com/johanochnystrom.fi/" instagram="https://www.instagram.com/johanochnystrom/" />
     <h4>Fratello</h4>
@@ -47,7 +47,7 @@ export default ({ data }) => (
       This place is run by La Torrefazione, who have in total three locations in the city. They employ great baristas who are passionate about their craft, however, once in a while you might stumble upon a trainee, which mostly happens in one of the other locations in my personal experience.
     </p>
     <ImageGrid photos={[
-      data.fratello1,
+      { image: data.fratello1, alt: "Fratello — specialty coffee shop in Helsinki" },
     ]} credit={{ text: "La Torrefazione", url: "https://www.facebook.com/latorrefinland/" }} />
     <ExternalLinks website="http://www.latorre.fi" facebook="https://www.facebook.com/latorrefinland/" instagram="https://www.instagram.com/latorrefazione/" />
     <h2>Bars</h2>
@@ -73,8 +73,8 @@ export default ({ data }) => (
       I haven't been to this bar for more than a year, and I've heard that the procedure changed a bit, and you might be able to walk straight in. Either way, the place is absolutely wonderful, with bartenders making top notch cocktails.
     </p>
     <ImageGrid photos={[
-      data.booksAntiques1,
-      data.booksAntiques2,
+      { image: data.booksAntiques1, alt: "Books & Antiques — speakeasy bar in Helsinki" },
+      { image: data.booksAntiques2, alt: "Books & Antiques — speakeasy bar in Helsinki" },
     ]} credit={{ text: "Books & Antiques", url: "https://www.facebook.com/Books-Antiques-172870279576969/" }} />
     <ExternalLinks website="https://www.sonofapunch.com/fi/ravintolat/books-antiques/" facebook="https://www.facebook.com/Books-Antiques-172870279576969/" />
     <h4>Pastor</h4>
@@ -82,9 +82,9 @@ export default ({ data }) => (
       In Pastor, they make my favorite Whisky Sour variation, called “Sour Dog.” The place feels very high-end, but with style, and drink prices are roughly the same as in other good bars. They also serve fantastic food, but it is very pricey, so I wouldn't eat there unless I had a business dinner.
     </p>
     <ImageGrid photos={[
-      data.pastor1,
-      data.pastor2,
-      data.pastor3,
+      { image: data.pastor1, alt: "Pastor — cocktail bar in Helsinki" },
+      { image: data.pastor2, alt: "Pastor — cocktail bar in Helsinki" },
+      { image: data.pastor3, alt: "Pastor — cocktail bar in Helsinki" },
     ]} credit={{ text: "Pastor", url: "https://www.facebook.com/pastorhelsinki/" }} />
     <ExternalLinks website="http://www.pastorrestaurant.fi" facebook="https://www.facebook.com/pastorhelsinki/" instagram="https://www.instagram.com/pastorhelsinki/" />
     <h4>Liberty or Death</h4>
@@ -92,8 +92,8 @@ export default ({ data }) => (
       Great, speakeasy-inspired cocktail bar, with, surprisingly, hip-hop music playing in the background, which I really like. The place is small and gets full quick, so avoid Fridays and Saturdays.
     </p>
     <ImageGrid photos={[
-      data.libertyOrDeath1,
-      data.libertyOrDeath2,
+      { image: data.libertyOrDeath1, alt: "Liberty or Death — cocktail bar in Helsinki" },
+      { image: data.libertyOrDeath2, alt: "Liberty or Death — cocktail bar in Helsinki" },
     ]} credit={{ text: "Liberty or Death", url: "https://www.facebook.com/libertyordeathbar/" }} />
     <ExternalLinks website="https://www.sonofapunch.com/fi/ravintolat/liberty-or-death/" facebook="https://www.facebook.com/libertyordeathbar/" />
     <h4>Kaisla</h4>
@@ -101,7 +101,7 @@ export default ({ data }) => (
       Big beer bar, with a large variety of beers, and helpful staff.
     </p>
     <ImageGrid photos={[
-      data.kaisla1,
+      { image: data.kaisla1, alt: "Kaisla — taproom in Helsinki" },
     ]} credit={{ text: "Kaisla", url: "https://www.raflaamo.fi/en/helsinki/kaisla" }} />
     <ExternalLinks website="https://www.raflaamo.fi/en/helsinki/kaisla" />
     <h2>Food:</h2>
@@ -113,11 +113,11 @@ export default ({ data }) => (
       A perfect Saturday brunch place! And for all you USA folks out there, in Finland brunch doesn't include alcohol by default. But it does come with unlimited food — a wide variety of starters, main courses, desserts, non-alcoholic drinks — pick whatever you want for a fixed price. And no one stops you from getting a bottle of sparkling for an additional fee. A must have.
     </p>
     <ImageGrid photos={[
-      data.blockDylan1,
-      data.blockDylan2,
-      data.blockDylan3,
-      data.blockDylan4,
-      data.blockDylan5,
+      { image: data.blockDylan1, alt: "Block By Dylan — brunch restaurant in Helsinki" },
+      { image: data.blockDylan2, alt: "Block By Dylan — brunch restaurant in Helsinki" },
+      { image: data.blockDylan3, alt: "Block By Dylan — brunch restaurant in Helsinki" },
+      { image: data.blockDylan4, alt: "Block By Dylan — brunch restaurant in Helsinki" },
+      { image: data.blockDylan5, alt: "Block By Dylan — brunch restaurant in Helsinki" },
     ]} credit={{ text: "Block By Dylan", url: "https://www.dylan.fi/block/" }} />
     <ExternalLinks website="https://www.dylan.fi/block/" facebook="https://www.facebook.com/blockhelsinki/" instagram="https://www.instagram.com/blockbydylan/" />
     <h4>Momotoko</h4>
@@ -125,11 +125,11 @@ export default ({ data }) => (
       Fantastic ramen place in the heart of the city. This is the restaurant that made me fall in love with ramen.
     </p>
     <ImageGrid photos={[
-      data.momotoko1,
-      data.momotoko2,
-      data.momotoko3,
-      data.momotoko4,
-      data.momotoko5,
+      { image: data.momotoko1, alt: "Momotoko — ramen restaurant in Helsinki" },
+      { image: data.momotoko2, alt: "Momotoko — ramen restaurant in Helsinki" },
+      { image: data.momotoko3, alt: "Momotoko — ramen restaurant in Helsinki" },
+      { image: data.momotoko4, alt: "Momotoko — ramen restaurant in Helsinki" },
+      { image: data.momotoko5, alt: "Momotoko — ramen restaurant in Helsinki" },
     ]} credit={{ text: "Momotoko", url: "http://www.momotoko.com" }} />
     <ExternalLinks website="http://www.momotoko.com" facebook="https://www.facebook.com/Momotoko-1178106338995766/" />
     <h4>Samrat</h4>
@@ -137,7 +137,7 @@ export default ({ data }) => (
       Samrat is a cozy and neat restaurant, with most delicious Indian food, and it won't leave your clothes smelling like curry for the rest of the day. Curry dishes and naan bread to die for.
     </p>
     <ImageGrid photos={[
-      data.samrat1,
+      { image: data.samrat1, alt: "Samrat — Indian restaurant in Helsinki" },
     ]} credit={{ text: "TripAdvisor — Kati M", url: "https://www.tripadvisor.com/members/156katim" }} />
     <ExternalLinks website="http://www.samrat.fi" />
     <h4>Skiffer</h4>
@@ -148,11 +148,11 @@ export default ({ data }) => (
       They've got a few locations in Helsinki. Erottaja location is the easiest to get to from city center, but if it's summer and wanna spend a great time in a sea environment, head over to Liuskaluoto island, and enjoy the sun, beer, the sea, and some fantastic pizza.
     </p>
     <ImageGrid photos={[
-      data.skiffer1,
-      data.skiffer2,
-      data.skiffer3,
-      data.skiffer4,
-      data.skiffer5,
+      { image: data.skiffer1, alt: "Skiffer — pizza restaurant in Helsinki" },
+      { image: data.skiffer2, alt: "Skiffer — pizza restaurant in Helsinki" },
+      { image: data.skiffer3, alt: "Skiffer — pizza restaurant in Helsinki" },
+      { image: data.skiffer4, alt: "Skiffer — pizza restaurant in Helsinki" },
+      { image: data.skiffer5, alt: "Skiffer — pizza restaurant in Helsinki" },
     ]} credit={{ text: "Skiffer", url: "https://www.facebook.com/skifferrestaurant/" }} />
     <ExternalLinks website="http://www.skiffer.fi" facebook="https://www.facebook.com/skifferrestaurant/" instagram="https://www.instagram.com/skifferrestaurant/" />
     <h4>Baskeri & Basso</h4>
@@ -163,11 +163,11 @@ export default ({ data }) => (
       Note that this place is high-end, and is more suitable for a special occasion, as a typical meal would probably end up costing twice as much as other places on this list.
     </p>
     <ImageGrid photos={[
-      data.basbas1,
-      data.basbas2,
-      data.basbas3,
-      data.basbas4,
-      data.basbas5,
+      { image: data.basbas1, alt: "Baskeri & Basso — high-end restaurant in Helsinki" },
+      { image: data.basbas2, alt: "Baskeri & Basso — high-end restaurant in Helsinki" },
+      { image: data.basbas3, alt: "Baskeri & Basso — high-end restaurant in Helsinki" },
+      { image: data.basbas4, alt: "Baskeri & Basso — high-end restaurant in Helsinki" },
+      { image: data.basbas5, alt: "Baskeri & Basso — high-end restaurant in Helsinki" },
     ]} credit={{ text: "Baskeri & Basso", url: "http://basbas.fi/bistro/" }} />
     <ExternalLinks website="http://basbas.fi/bistro/" facebook="https://www.facebook.com/BasBasOfficial/" instagram="https://www.instagram.com/basbasofficial/" />
     <h4>Holiday</h4>
@@ -175,11 +175,11 @@ export default ({ data }) => (
       I've had the most amazing veef (veggie beef substitute) dish ever in Holiday. Plenty of outdoor seating, perfect for nice summer evenings, on a beautiful Katajanokka island.
     </p>
     <ImageGrid photos={[
-      data.holiday1,
-      data.holiday2,
-      data.holiday3,
-      data.holiday4,
-      data.holiday5,
+      { image: data.holiday1, alt: "Holiday — restaurant with great views in Helsinki" },
+      { image: data.holiday2, alt: "Holiday — restaurant with great views in Helsinki" },
+      { image: data.holiday3, alt: "Holiday — restaurant with great views in Helsinki" },
+      { image: data.holiday4, alt: "Holiday — restaurant with great views in Helsinki" },
+      { image: data.holiday5, alt: "Holiday — restaurant with great views in Helsinki" },
     ]} credit={{ text: "Holiday", url: "https://www.facebook.com/HolidayBarHelsinki/" }} />
     <ExternalLinks website="http://holiday-bar.fi" facebook="https://www.facebook.com/HolidayBarHelsinki/" instagram="https://www.instagram.com/holidaybarhelsinki/" />
     <br />

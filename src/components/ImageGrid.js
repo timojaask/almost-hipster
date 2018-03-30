@@ -65,16 +65,16 @@ const PhotoCredit = ({ credit }) =>
     credit.text}
   </div>
 
-const OneImage = ({ photo }) => <Img sizes={photo.sizes} />
+const OneImage = ({ photo }) => <Img sizes={photo.image.sizes} alt={photo.alt} />
 
 const MultipleImages = ({ largePhoto, thumbnails, onPhotoSelected, height }) =>
   <div className={styles.container} >
     <div className={styles.largeImage}>
-      <Img sizes={largePhoto.sizes} />
+      <Img sizes={largePhoto.image.sizes} alt={largePhoto.alt} />
     </div>
     {thumbnails.map((photo, idx) =>
       <button onClick={() => { onPhotoSelected(idx + 1) }} key={idx} className={styleForIndex(idx + 1)}>
-        <Img className={styles.thumbnailImage} sizes={photo.sizes} />
+        <Img className={styles.thumbnailImage} sizes={photo.image.sizes} alt={photo.alt} />
       </button>
     )}
   </div>
