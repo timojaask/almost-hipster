@@ -19,7 +19,7 @@ export default ({ children }) =>
     </Helmet>
     <header className={styles.header}>
       <Link to="/" className={styles.titleContainer}>
-        <h3 className={styles.title}>almost hipster</h3>
+        <h1 className={styles.title}>almost hipster</h1>
       </Link>
       <ul className={styles.list}>
         <ListLink to="/">home</ListLink>

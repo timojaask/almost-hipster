@@ -17,6 +17,7 @@ const ListItem = ({ name, coverImage, path, date }) =>
 
 export default ({ data }) =>
   <div className={styles.container}>
+    <h2 className={styles.tagline}>Choose a city for recommendations, including specialty coffee places, speakeasy bars, and interesting restaurants.</h2>
     <ListItem name="Recife" coverImage={data.recifeCover} path="/recife" date={"Mar 2018"} />
     <ListItem name="Oradea" coverImage={data.oradeaCover} path="/oradea" date={"Jan 2018"} />
     <ListItem name="New York" coverImage={data.newYorkCover} path="/new-york" date={"Aug 2017"} />

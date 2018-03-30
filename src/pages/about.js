@@ -6,7 +6,7 @@ export default () => (
     <Helmet>
       <title>About Almost Hipster</title>
     </Helmet>
-    <h1>About</h1>
+    <h1>About Almost Hipster</h1>
     <p>
       Almost Hipster is a blog about best cafes, bars and restaurants in various cities. Get tips on specialty coffee places, speakeasy bars, and interesting restaurants in New York, Helsinki, Recife, and Oradea.
     </p>
