@@ -28,7 +28,7 @@ export default ({ data }) => (
       Most common coffee shops São Braz and Delta Expresso [traditional Portuguese spelling of “espresso”<FootnoteLink index="2" />] are the local equivalents of Starbucks. However, there are a few third-wave coffee shops that prepare some excellent coffee drinks.
     </p>
     <p>
-      My favorite drink — flat white — is not known here, but asking for a cappuccino with more coffee and less milk, “cappuccino com mais cafe e menos leite,” works pretty well in the specialty coffee places.
+      My favorite drink — flat white — is mostly not known here, but asking for a cappuccino with more coffee and less milk, “cappuccino com mais cafe e menos leite,” works decently in the specialty coffee places.
     </p>
     <h4>Borsoi</h4>
     <p>
