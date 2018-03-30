@@ -124,6 +124,18 @@ export default ({ data }) => (
       { image: data.udon3, alt: "Udon — sushi buffet restaurant in Recife" },
     ]} credit={{ text: "Udon", url: "https://www.facebook.com/UdonCozinhaOriental/" }} />
     <ExternalLinks website="https://udon.com.br" facebook="https://www.facebook.com/UdonCozinhaOriental/" instagram="https://www.instagram.com/udoncozinhaoriental/" />
+    <h4>URSA Bar e Comedoria</h4>
+    <p>
+      URSA is a cool tiny bar and restaurant with funky interior and great drinks and food. In addition, their playlist would be very much approved by alternative music folks.
+    </p>
+    <ImageGrid photos={[
+      { image: data.ursa1, alt: "URSA — alternative bar and restaurant in Recife" },
+      { image: data.ursa2, alt: "URSA — alternative bar and restaurant in Recife" },
+      { image: data.ursa3, alt: "URSA — alternative bar and restaurant in Recife" },
+      { image: data.ursa4, alt: "URSA — alternative bar and restaurant in Recife" },
+      { image: data.ursa5, alt: "URSA — alternative bar and restaurant in Recife" },
+    ]} credit={{ text: "URSA Bar e Comedoria", url: "https://www.facebook.com/ursabarecomedoria/" }} />
+    <ExternalLinks facebook="https://www.facebook.com/ursabarecomedoria/" instagram="https://www.instagram.com/ursa_barecomedoria/" />
     <h2>Other</h2>
     <h4>Açaí Empório Boa Viagem</h4>
     <p>
@@ -292,6 +304,31 @@ export const query = graphql`
       }
     },
     clandestino5: imageSharp(id: {regex: "/recife-clandestino5/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    ursa1: imageSharp(id: {regex: "/recife-ursa1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    ursa2: imageSharp(id: {regex: "/recife-ursa2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    ursa3: imageSharp(id: {regex: "/recife-ursa3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    ursa4: imageSharp(id: {regex: "/recife-ursa4/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    ursa5: imageSharp(id: {regex: "/recife-ursa5/" }) {
       sizes(maxWidth: 700, maxHeight: 525) {
         ...GatsbyImageSharpSizes
       }
