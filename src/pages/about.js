@@ -8,7 +8,7 @@ export default () => (
     </Helmet>
     <h1>About</h1>
     <p>
-      Cafe, bar, and restaurant recommendations, based on my subjective opinion.
+      Almost Hipster is a blog about best cafes, bars and restaurants in various cities. Get tips on specialty coffee places, speakeasy bars, and interesting restaurants in New York, Helsinki, Recife, and Oradea.
     </p>
     <h2>Contact</h2>
     <p>

@@ -15,6 +15,7 @@ export default ({ children }) =>
     <Helmet>
       <title>Almost Hipster - cafe, bar, and restaurant recommendations</title>
       <meta name="google-site-verification" content="v1QRI4GRc-Gm6BitmF7KiYT15QOLQjdQljzZK68LwjI" />
+      <meta name="description" content="Almost Hipster is a blog about best cafes, bars and restaurants in various cities. Get tips on specialty coffee places, speakeasy bars, and interesting restaurants in New York, Helsinki, Recife, and Oradea." />
     </Helmet>
     <header className={styles.header}>
       <Link to="/" className={styles.titleContainer}>
