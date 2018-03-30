@@ -56,6 +56,18 @@ export default ({ data }) => (
       { image: data.kaffe1, alt: "Kaffe — specialty coffee shop in Recife" },
     ]} />
     <ExternalLinks website="https://www.sympla.com.br/kaffett" facebook="https://www.facebook.com/kaffett/" instagram="https://www.instagram.com/kaffe.tt/" />
+    <h4>Clandestino Café</h4>
+    <p>
+      I was so happy and sad to discover Clandestino Café on my last week in Recife! Get this — it's a specialty coffee shop built inside a functioning old-school ex-military bus. No kidding. It is very cozy, with creative decor inside (the photos do not do it justice). The owners, Mateus and Sara are passionate about teaching people about specialty coffee, they speak fluent English, and we've had a great conversation. They happily served me a flat white, which was a first for me in Recife, and it was everything I wanted it to be.
+    </p>
+    <ImageGrid photos={[
+      { image: data.clandestino1, alt: "Clandestino Café — specialty coffee shop in Recife" },
+      { image: data.clandestino2, alt: "Clandestino Café — specialty coffee shop in Recife" },
+      { image: data.clandestino3, alt: "Clandestino Café — specialty coffee shop in Recife" },
+      { image: data.clandestino4, alt: "Clandestino Café — specialty coffee shop in Recife" },
+      { image: data.clandestino5, alt: "Clandestino Café — specialty coffee shop in Recife" },
+    ]} />
+    <ExternalLinks facebook="https://www.facebook.com/clandestino364/" instagram="https://www.instagram.com/clandestinocafe/" />
     <h2>Bars</h2>
     <h4>Pina Cocktails & Co</h4>
     <p>
@@ -255,6 +267,31 @@ export const query = graphql`
       }
     },
     udon3: imageSharp(id: {regex: "/recife-udon3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    clandestino1: imageSharp(id: {regex: "/recife-clandestino1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    clandestino2: imageSharp(id: {regex: "/recife-clandestino2/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    clandestino3: imageSharp(id: {regex: "/recife-clandestino3/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    clandestino4: imageSharp(id: {regex: "/recife-clandestino4/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    clandestino5: imageSharp(id: {regex: "/recife-clandestino5/" }) {
       sizes(maxWidth: 700, maxHeight: 525) {
         ...GatsbyImageSharpSizes
       }
