@@ -66,6 +66,7 @@ export default ({ data }) => (
     </p>
     <ImageGrid photos={[
       { image: data.kaffe1, alt: "Kaffe — specialty coffee shop in Recife" },
+      { image: data.kaffe2, alt: "Kaffe — specialty coffee shop in Recife" },
     ]} />
     <ExternalLinks website="https://www.sympla.com.br/kaffett" facebook="https://www.facebook.com/kaffett/" instagram="https://www.instagram.com/kaffe.tt/" />
     <h2>Bars</h2>
@@ -199,6 +200,11 @@ export const query = graphql`
       }
     },
     kaffe1: imageSharp(id: {regex: "/kaffe1/" }) {
+      sizes(maxWidth: 700, maxHeight: 525) {
+        ...GatsbyImageSharpSizes
+      }
+    },
+    kaffe2: imageSharp(id: {regex: "/kaffe2/" }) {
       sizes(maxWidth: 700, maxHeight: 525) {
         ...GatsbyImageSharpSizes
       }
